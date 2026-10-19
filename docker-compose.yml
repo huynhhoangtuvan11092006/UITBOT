@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: uitbot-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: uitbot
+      POSTGRES_USER: uitbot_user
+      POSTGRES_PASSWORD: uitbot_password
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uitbot_user -d uitbot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    container_name: uitbot-app
+    restart: unless-stopped
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    env_file:
+      - .env
+
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: uitbot
+      POSTGRES_USER: uitbot_user
+      POSTGRES_PASSWORD: uitbot_password
+
+      OPENAI_BASE_URL: http://host.docker.internal:20128/v1
+
+    ports:
+      - "8000:8000"
+
+volumes:
+  postgres_data:
