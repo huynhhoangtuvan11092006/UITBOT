@@ -88,7 +88,7 @@ Ingest data (put PDFs in `data/raw/` first):
 
 ```bash
 python scripts/extract_documents.py
-python scripts/chunk_documents.py
+python app/rag/chunker.py
 python scripts/create_tables.py
 python scripts/load_chunks_to_postgres.py
 ```
