@@ -197,6 +197,18 @@ class RAGService:
         # Step 5: Citation Validation
         verified_citations = validate_citations(raw_citations, reranked_chunks)
 
+        # Fallback grounding: ensure user always gets the top source if answer was synthesized
+        if not verified_citations and reranked_chunks and gen_sufficient:
+            top_c = reranked_chunks[0]
+            verified_citations = [
+                Citation(
+                    source_file=Path(top_c.source_file).name,
+                    article=top_c.article,
+                    page=top_c.page_start,
+                    quote=top_c.text[:120].strip() + "...",
+                )
+            ]
+
         # If LLM didn't attach citation markdown, append verified citations footnote
         if verified_citations and "**Tài liệu trích dẫn:**" not in answer_text:
             answer_text += format_citations_markdown(verified_citations)

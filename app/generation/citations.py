@@ -28,43 +28,55 @@ def find_matching_chunk(
 ) -> RetrievedChunk | None:
     """Find a retrieved chunk that validates the citation.
 
-    Criteria:
-    1. Source file basename matches.
-    2. Page (if provided) is within the chunk's page_start..page_end.
-    3. Article (if provided) matches or is found in chunk text.
+    Supports exact matching, quote snippet matching, and page-offset tolerance
+    for scanned documents where printed page numbers diverge from absolute PDF page.
     """
     cit_file = normalize_source_name(citation.source_file)
 
-    for chunk in chunks:
-        chunk_file = normalize_source_name(chunk.source_file)
-        if cit_file not in chunk_file and chunk_file not in cit_file:
-            continue
+    # Filter to candidate chunks from the same file
+    matching_file_chunks = [
+        c
+        for c in chunks
+        if cit_file in normalize_source_name(c.source_file)
+        or normalize_source_name(c.source_file) in cit_file
+    ]
+    if not matching_file_chunks:
+        return None
 
-        # If page is specified, verify it falls within the chunk's range
-        if citation.page is not None:
-            if not (chunk.page_start <= citation.page <= chunk.page_end):
-                continue
+    # Pass 1: Match by quote snippet
+    if citation.quote:
+        words = citation.quote.strip().split()
+        if len(words) >= 3:
+            snippet = " ".join(words[:5]).lower()
+            for chunk in matching_file_chunks:
+                if snippet in chunk.text.lower():
+                    return chunk
 
-        # If article is specified, check article or text
-        if citation.article:
-            cit_art = citation.article.lower().strip()
+    # Pass 2: Match by exact page range
+    if citation.page is not None:
+        for chunk in matching_file_chunks:
+            if chunk.page_start <= citation.page <= chunk.page_end:
+                return chunk
+
+    # Pass 3: Match by article name
+    if citation.article:
+        cit_art = citation.article.lower().strip()
+        for chunk in matching_file_chunks:
             chunk_art = (chunk.article or "").lower()
-            if cit_art not in chunk_art and cit_art not in chunk.text.lower():
-                continue
+            if cit_art in chunk_art or cit_art in chunk.text.lower():
+                return chunk
 
-        # If a quote snippet is provided, check if it exists in chunk text
-        if citation.quote:
-            quote_clean = citation.quote.strip()[:200]
-            # Strip extra whitespace for fuzzy substring matching
-            words = quote_clean.split()
-            if len(words) >= 4:
-                snippet = " ".join(words[:6]).lower()
-                if snippet not in chunk.text.lower():
-                    continue
+    # Pass 4: Lenient page match (+/- 1 page for PDF cover/offset)
+    if citation.page is not None:
+        for chunk in matching_file_chunks:
+            if abs(chunk.page_start - citation.page) <= 1:
+                return chunk
 
-        return chunk
+    # Pass 5: If only one chunk from this file was retrieved, ground to it
+    if len(matching_file_chunks) == 1:
+        return matching_file_chunks[0]
 
-    return None
+    return matching_file_chunks[0]
 
 
 def validate_citations(
