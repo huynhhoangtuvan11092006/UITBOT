@@ -50,6 +50,11 @@ class Settings(BaseSettings):
     rrf_k: int = 60
     bm25_tokenizer: Literal["underthesea", "simple"] = "underthesea"
 
+    evidence_min_score: float = 0.02
+    rag_top_k: int = 5
+    llm_temperature: float = 0.1
+    llm_timeout: float = 45.0
+
     debug: bool = True
     host: str = "0.0.0.0"
     port: int = 8000

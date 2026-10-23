@@ -23,6 +23,8 @@ services:
       dockerfile: Dockerfile
     container_name: uitbot-app
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
       POSTGRES_HOST: db
       POSTGRES_PORT: 5432
@@ -30,6 +32,8 @@ services:
       POSTGRES_USER: uitbot_user
       POSTGRES_PASSWORD: uitbot_password
       OCR_ENGINE: tesseract
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8000:8000"
     volumes:

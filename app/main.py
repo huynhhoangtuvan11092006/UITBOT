@@ -8,6 +8,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
+from app.api.chat import router as chat_router
 from app.api.health import router as health_router
 from app.config import settings
 from app.db.pool import close_pool, init_pool
@@ -32,6 +33,7 @@ app = FastAPI(
 )
 
 app.include_router(health_router)
+app.include_router(chat_router)
 
 if STATIC_DIR.exists():
     app.mount(
