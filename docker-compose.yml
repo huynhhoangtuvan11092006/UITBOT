@@ -32,6 +32,7 @@ services:
       POSTGRES_USER: uitbot_user
       POSTGRES_PASSWORD: uitbot_password
       OCR_ENGINE: tesseract
+      OPENAI_BASE_URL: http://host.docker.internal:20128/v1
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:

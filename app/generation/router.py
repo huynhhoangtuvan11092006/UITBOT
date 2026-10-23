@@ -48,6 +48,12 @@ _GREETING_PATTERNS = re.compile(
     re.IGNORECASE,
 )
 
+_OUT_OF_SCOPE_PATTERNS = re.compile(
+    r"(thời tiết|nhiệt độ|dự báo|mưa|nắng|quán ăn|món ăn|bài hát|nhạc|phim|code|python|java|"
+    r"javascript|viết code|quân sự|bóng đá|ai là người|tổng thống|thủ tướng)",
+    re.IGNORECASE,
+)
+
 
 def _rule_based_fallback(query: str) -> RouterDecision:
     """Fallback classifier when LLM call is unavailable or fails."""
@@ -60,6 +66,18 @@ def _rule_based_fallback(query: str) -> RouterDecision:
             direct_response=(
                 "Xin chào bạn! Mình là UITBOT, trợ lý giải đáp quy chế, quy định học vụ "
                 "tại Trường Đại học Công nghệ Thông tin (ĐHQG-HCM). Bạn cần tìm hiểu thông tin gì?"
+            ),
+        )
+
+    if _OUT_OF_SCOPE_PATTERNS.search(normalized):
+        return RouterDecision(
+            intent=Intent.OUT_OF_SCOPE,
+            rewritten_query="",
+            explanation="Rule-based matched out-of-scope pattern",
+            direct_response=(
+                "Xin lỗi bạn, mình là UITBOT chỉ hỗ trợ giải đáp các quy chế, quy định đào tạo "
+                "và học vụ của Trường ĐH Công nghệ Thông tin (ĐHQG-HCM). Mình không thể hỗ trợ "
+                "các chủ đề ngoài phạm vi này."
             ),
         )
 
@@ -119,7 +137,10 @@ def route_and_rewrite(
         )
 
         content = response.choices[0].message.content or "{}"
-        data: dict[str, Any] = json.loads(content)
+        start = content.find("{")
+        end = content.rfind("}")
+        json_slice = content[start : end + 1] if start != -1 and end > start else content
+        data: dict[str, Any] = json.loads(json_slice)
 
         raw_intent = data.get("intent", "UIT_REGULATION").upper()
         try:

@@ -150,7 +150,12 @@ def generate_answer(
         )
 
         raw_content = response.choices[0].message.content or "{}"
-        data: dict[str, Any] = json.loads(raw_content)
+        start = raw_content.find("{")
+        end = raw_content.rfind("}")
+        json_slice = (
+            raw_content[start : end + 1] if start != -1 and end > start else raw_content
+        )
+        data: dict[str, Any] = json.loads(json_slice)
 
         answer = data.get("answer", "").strip()
         sufficient = bool(data.get("sufficient", True))
