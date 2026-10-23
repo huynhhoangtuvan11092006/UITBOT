@@ -58,6 +58,33 @@ pytest
 
 Re-running `python scripts/ingest.py` upserts by `chunk_id` and does not duplicate rows for the same `chunk_set`.
 
+## Phase 4 — UI Manual Testing Checklist (Checklist kiểm thử giao diện)
+
+Mở trình duyệt vào **`http://localhost:8000`** và thực hiện các bước kiểm tra sau:
+
+- [ ] **1. Kiểm thử Streaming thời gian thực (SSE)**:
+  - Bấm vào một chip gợi ý (ví dụ: *"Điều kiện để xét tốt nghiệp?"*) hoặc gõ câu hỏi vào ô input.
+  - **Kỳ vọng:** Xuất hiện trạng thái phân tích, sau đó câu trả lời tuôn ra từng cụm từ kèm con trỏ nhấp nháy liên tục, giao diện tự động cuộn xuống dưới cùng mượt mà.
+- [ ] **2. Kiểm thử Thẻ nguồn trích dẫn (File – Điều – Trang)**:
+  - Khi câu trả lời hoàn tất, kiểm tra phần *"Căn cứ quy chế trích dẫn:"*.
+  - **Kỳ vọng:** Hiển thị thẻ dạng pill màu xanh UIT với định dạng `📄 [Tên_file.pdf] – [Điều X] – Trang [Y]`. Có trích đoạn văn bản `quote` đi kèm trong hộp viền xanh.
+- [ ] **3. Kiểm thử Đánh giá phản hồi 👍 / 👎 (`/api/v1/feedback`)**:
+  - Bấm vào nút `👍` hoặc `👎` ở góc dưới câu trả lời của bot.
+  - **Kỳ vọng:** Nút chuyển sang trạng thái active, xuất hiện dòng thông báo `"✓ Cảm ơn bạn!"`. Kiểm tra tab Network của trình duyệt thấy gửi thành công `POST /api/v1/feedback` với payload `{ "rating": 1, "session_id": "..." }` trả về mã `200 OK`.
+- [ ] **4. Kiểm thử Lịch sử phía Client (localStorage)**:
+  - Đặt từ 2 - 3 câu hỏi liên tiếp để tạo đoạn hội thoại dài.
+  - Bấm `F5` hoặc đóng tab mở lại `http://localhost:8000`.
+  - **Kỳ vọng:** Toàn bộ lịch sử tin nhắn của người dùng và bot cùng các thẻ trích dẫn vẫn được phục hồi nguyên vẹn.
+  - Bấm nút **"Làm mới hội thoại"** trên thanh Header → Chọn OK → Lịch sử trong `localStorage` được dọn sạch và màn hình quay lại tin nhắn chào mặc định.
+- [ ] **5. Kiểm thử Trạng thái lỗi & Thử lại (Error State & Retry)**:
+  - Tạm dừng container app bằng lệnh: `docker compose stop app`.
+  - Nhập một câu hỏi và bấm gửi.
+  - **Kỳ vọng:** Giao diện không bị treo, hiển thị thông báo lỗi màu đỏ lịch sự kèm nút `🔄 Thử lại`. Bật lại app (`docker compose start app`) và bấm `Thử lại` → Câu hỏi được gửi lại thành công.
+- [ ] **6. Kiểm thử Hiển thị an toàn chống tấn công XSS**:
+  - Nhập vào ô input đoạn mã độc: `<script>alert('xss')</script>` hoặc `<img src=x onerror=alert(1)>`.
+  - **Kỳ vọng:** Toàn bộ chuỗi ký tự được hiển thị an toàn dưới dạng chuỗi văn bản thuần túy (`textContent`), không có bất kỳ cửa sổ popup độc hại nào được kích hoạt.
+
+
 ## Project structure
 
 ```text

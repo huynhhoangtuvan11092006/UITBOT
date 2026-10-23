@@ -43,40 +43,42 @@ def find_matching_chunk(
     if not matching_file_chunks:
         return None
 
+    # If page is specified, it must be reasonably close (+/- 1 page) to chunk page range
+    # A completely wrong page (e.g. 999 vs 19) is a hallucination and must be rejected
+    valid_page_chunks = matching_file_chunks
+    if citation.page is not None:
+        valid_page_chunks = [
+            c
+            for c in matching_file_chunks
+            if (c.page_start - 1 <= citation.page <= c.page_end + 1)
+        ]
+        if not valid_page_chunks:
+            return None
+
     # Pass 1: Match by quote snippet
     if citation.quote:
         words = citation.quote.strip().split()
         if len(words) >= 3:
             snippet = " ".join(words[:5]).lower()
-            for chunk in matching_file_chunks:
+            for chunk in valid_page_chunks:
                 if snippet in chunk.text.lower():
                     return chunk
 
     # Pass 2: Match by exact page range
     if citation.page is not None:
-        for chunk in matching_file_chunks:
+        for chunk in valid_page_chunks:
             if chunk.page_start <= citation.page <= chunk.page_end:
                 return chunk
 
     # Pass 3: Match by article name
     if citation.article:
         cit_art = citation.article.lower().strip()
-        for chunk in matching_file_chunks:
+        for chunk in valid_page_chunks:
             chunk_art = (chunk.article or "").lower()
             if cit_art in chunk_art or cit_art in chunk.text.lower():
                 return chunk
 
-    # Pass 4: Lenient page match (+/- 1 page for PDF cover/offset)
-    if citation.page is not None:
-        for chunk in matching_file_chunks:
-            if abs(chunk.page_start - citation.page) <= 1:
-                return chunk
-
-    # Pass 5: If only one chunk from this file was retrieved, ground to it
-    if len(matching_file_chunks) == 1:
-        return matching_file_chunks[0]
-
-    return matching_file_chunks[0]
+    return valid_page_chunks[0] if valid_page_chunks else None
 
 
 def validate_citations(

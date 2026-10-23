@@ -68,3 +68,22 @@ Reason: prompt engineering alone cannot guarantee zero citation hallucination; d
 If the LLM endpoint is unreachable or times out, the system falls back to an extractive answer quoting the top retrieved chunk directly with its verified citation.
 Reason: ensures zero service outages even if external LLM gateways experience downtime.
 
+## Phase 4 - UI
+
+### Preserve official UIT visual identity with Vanilla CSS
+Retained the UIT brand palette (`--navy: #27397f`, `--blue: #4a63b5`, `--sky: #eaeefa`, `Be Vietnam Pro` typography, campus backdrop).
+Reason: provides instant institutional recognition for UIT students and stakeholders without bloated external CSS dependencies.
+
+### Strict DOM construction for XSS defense
+All dynamic text (user inputs, streamed tokens, markdown headers, and source quotes) is inserted exclusively via `document.createElement`, `textContent`, and `document.createTextNode`. `innerHTML` is never used on unescaped content.
+Reason: guarantees immunity against Cross-Site Scripting (XSS) attacks from malicious prompts or hallucinated tags.
+
+### Resilient SSE streaming with automatic retry
+Streamed generation operates over Server-Sent Events (`POST /api/v1/chat/stream`) with progressive DOM updates and a blinking cursor. Network disruptions present a clear error bubble equipped with an inline "Thử lại" (Retry) action.
+Reason: provides immediate visual feedback to the user while maintaining high resilience in adverse network conditions.
+
+### Client-side state persistence in localStorage
+Chat messages and persistent session UUIDs are stored client-side in browser `localStorage`, with an explicit "Làm mới hội thoại" (Reset) option.
+Reason: users do not lose their consultation history across page reloads without requiring server-side session databases.
+
+
