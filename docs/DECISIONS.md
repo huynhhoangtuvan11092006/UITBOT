@@ -30,3 +30,22 @@ Reason: the stack forbids LangChain; eval must pin chunking behavior in this rep
 ### Chat API removed until generation exists
 `POST /api/v1/chat` from the previous demo is deleted in Phase 1.
 Reason: it targeted a schema and pipeline that no longer exist. The static UIT UI remains but cannot answer yet.
+
+## Phase 2 - Retrieval
+
+### Indexed pgvector queries over full table scans
+Dense retrieval relies strictly on `ORDER BY e.embedding <=> %s::vector LIMIT %s` using the HNSW index on `chunk_embeddings_<slug>`.
+Reason: pulling entire tables into application memory breaks scalability and invalidates latency benchmarks in evaluation.
+
+### BM25 index built once per chunk_set with underthesea tokenization
+BM25Okapi is initialized lazily and cached per `chunk_set`, tokenized via `underthesea.word_tokenize(format="text")` with regex fallback.
+Reason: compound Vietnamese words (e.g., `học_phần`, `khóa_luận`) score significantly more accurately under BM25 than unigram splits. An explicit `rebuild()` method is provided.
+
+### RRF with k=60 and 20 candidates
+Reciprocal Rank Fusion merges top-20 dense and top-20 BM25 candidate lists with smoothing parameter $k=60$.
+Reason: Cormack et al. established $k=60$ as robust across diverse score distributions without needing score normalization.
+
+### Lazy-loaded CrossEncoder reranker
+`BAAI/bge-reranker-v2-m3` is loaded only on the first call to `rerank()` and can be toggled via `RERANKER_ENABLED`.
+Reason: CrossEncoders are memory-heavy (~2.2GB) and slow on CPU; isolating the component allows fast unit testing and clean ablation comparison in Phase 5.
+

@@ -43,6 +43,13 @@ class Settings(BaseSettings):
     ocr_low_confidence: float = 60.0
     ocr_dpi: int = 300
 
+    reranker_model_name: str = "BAAI/bge-reranker-v2-m3"
+    reranker_enabled: bool = True
+    reranker_batch_size: int = 16
+    retrieval_candidate_count: int = 20
+    rrf_k: int = 60
+    bm25_tokenizer: Literal["underthesea", "simple"] = "underthesea"
+
     debug: bool = True
     host: str = "0.0.0.0"
     port: int = 8000

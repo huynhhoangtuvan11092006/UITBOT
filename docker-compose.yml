@@ -33,7 +33,10 @@ services:
     ports:
       - "8000:8000"
     volumes:
+      - ./app:/app/app
       - ./data:/app/data
+      - ./scripts:/app/scripts
+      - ./tests:/app/tests
       - hf_cache:/root/.cache/huggingface
     depends_on:
       db:
