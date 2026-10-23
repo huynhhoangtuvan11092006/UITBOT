@@ -1,0 +1,23 @@
+[project]
+name = "uitbot"
+version = "0.2.0"
+description = "Vietnamese RAG assistant for UIT academic regulations"
+requires-python = ">=3.12"
+readme = "README.md"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["app", "scripts", "tests"]
+exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+markers = [
+    "integration: tests that need PostgreSQL",
+]
