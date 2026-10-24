@@ -1,8 +1,8 @@
 # UITBOT Evaluation & Benchmarking Report (Phase 5)
 
 > **Execution Metadata:**
-> - **Date & Time:** `2026-10-24 01:02:47`
-> - **Git Commit:** `unknown` (`unknown`)
+> - **Date & Time:** `2026-10-24 01:07:15`
+> - **Git Commit:** `738370e7` (`main`)
 > - **Platform:** `Linux 6.18.54.1-microsoft-standard-WSL2 (Python 3.12.15)`
 > - **Evaluation Dataset:** `evaluation/golden_dataset.jsonl` (105 verified questions, 0 synthetic)
 > - **Primary Embedding Model:** `BAAI/bge-m3` (1024-dim, HNSW Cosine)

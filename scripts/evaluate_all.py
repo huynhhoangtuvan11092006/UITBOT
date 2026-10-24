@@ -41,8 +41,19 @@ def get_git_info() -> dict[str, str]:
             ["git", "rev-parse", "--abbrev-ref", "HEAD"], stderr=subprocess.DEVNULL, text=True
         ).strip()
     except Exception:
-        head_file = ROOT / ".git" / "HEAD"
-        if head_file.exists():
+        pass
+
+    info_file = ROOT / "evaluation" / ".git_info.json"
+    if info_file.exists():
+        try:
+            data = json.loads(info_file.read_text(encoding="utf-8"))
+            return {"commit": data.get("commit", "unknown"), "branch": data.get("branch", "unknown")}
+        except Exception:
+            pass
+
+    head_file = ROOT / ".git" / "HEAD"
+    if head_file.exists():
+        try:
             head_content = head_file.read_text(encoding="utf-8").strip()
             if head_content.startswith("ref: "):
                 ref_sub = head_content[5:]
@@ -52,6 +63,8 @@ def get_git_info() -> dict[str, str]:
                     commit = ref_file.read_text(encoding="utf-8").strip()
             else:
                 commit = head_content[:40]
+        except Exception:
+            pass
     return {"commit": commit, "branch": branch}
 
 
