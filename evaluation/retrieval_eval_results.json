@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-10-24 00:41:09",
+  "total_verified_questions": 105,
+  "ablation_retrieval": [
+    {
+      "mode_name": "Dense (bge-m3)",
+      "description": "pgvector cosine similarity top_k=5",
+      "page_metrics": {
+        "recall_at_3": 0.5143,
+        "recall_at_5": 0.581,
+        "mrr_at_5": 0.4438
+      },
+      "article_metrics": {
+        "recall_at_3": 0.2476,
+        "recall_at_5": 0.2762,
+        "mrr_at_5": 0.2019
+      },
+      "latency": {
+        "mean_ms": 413.49,
+        "p50_ms": 282.72,
+        "p95_ms": 493.84
+      },
+      "llm_calls_per_query": 0
+    },
+    {
+      "mode_name": "Hybrid (Dense + BM25)",
+      "description": "RRF(dense, bm25, k=60) top_k=5",
+      "page_metrics": {
+        "recall_at_3": 0.5048,
+        "recall_at_5": 0.5905,
+        "mrr_at_5": 0.4333
+      },
+      "article_metrics": {
+        "recall_at_3": 0.2381,
+        "recall_at_5": 0.3048,
+        "mrr_at_5": 0.1952
+      },
+      "latency": {
+        "mean_ms": 291.35,
+        "p50_ms": 247.25,
+        "p95_ms": 300.74
+      },
+      "llm_calls_per_query": 0
+    },
+    {
+      "mode_name": "Hybrid + Rerank",
+      "description": "Hybrid + bge-reranker-v2-m3 top_k=5",
+      "page_metrics": {
+        "recall_at_3": 0.5143,
+        "recall_at_5": 0.5905,
+        "mrr_at_5": 0.4621
+      },
+      "article_metrics": {
+        "recall_at_3": 0.2571,
+        "recall_at_5": 0.3048,
+        "mrr_at_5": 0.2162
+      },
+      "latency": {
+        "mean_ms": 5582.32,
+        "p50_ms": 5418.16,
+        "p95_ms": 6626.81
+      },
+      "llm_calls_per_query": 0
+    },
+    {
+      "mode_name": "Rewrite + Hybrid + Rerank",
+      "description": "LLM rewrite + Hybrid + Rerank top_k=5",
+      "page_metrics": {
+        "recall_at_3": 0.5048,
+        "recall_at_5": 0.619,
+        "mrr_at_5": 0.4521
+      },
+      "article_metrics": {
+        "recall_at_3": 0.2476,
+        "recall_at_5": 0.3238,
+        "mrr_at_5": 0.2149
+      },
+      "latency": {
+        "mean_ms": 12604.54,
+        "p50_ms": 10581.28,
+        "p95_ms": 30954.51
+      },
+      "llm_calls_per_query": 1
+    }
+  ],
+  "category_breakdown": {
+    "tín chỉ": {
+      "count": 20,
+      "page_recall_at_3": 0.35,
+      "page_recall_at_5": 0.45,
+      "page_mrr_at_5": 0.275,
+      "article_recall_at_3": 0.1,
+      "article_recall_at_5": 0.2,
+      "article_mrr_at_5": 0.0583,
+      "mean_latency_ms": 5818.4
+    },
+    "học vụ": {
+      "count": 22,
+      "page_recall_at_3": 0.5455,
+      "page_recall_at_5": 0.7273,
+      "page_mrr_at_5": 0.4902,
+      "article_recall_at_3": 0.3182,
+      "article_recall_at_5": 0.3636,
+      "article_mrr_at_5": 0.2841,
+      "mean_latency_ms": 6217.47
+    },
+    "thi-điểm": {
+      "count": 22,
+      "page_recall_at_3": 0.7273,
+      "page_recall_at_5": 0.8182,
+      "page_mrr_at_5": 0.7045,
+      "article_recall_at_3": 0.5909,
+      "article_recall_at_5": 0.6818,
+      "article_mrr_at_5": 0.5,
+      "mean_latency_ms": 6751.1
+    },
+    "tốt nghiệp": {
+      "count": 21,
+      "page_recall_at_3": 0.4762,
+      "page_recall_at_5": 0.4762,
+      "page_mrr_at_5": 0.4048,
+      "article_recall_at_3": 0.0476,
+      "article_recall_at_5": 0.0952,
+      "article_mrr_at_5": 0.0357,
+      "mean_latency_ms": 7487.86
+    },
+    "câu khó": {
+      "count": 20,
+      "page_recall_at_3": 0.4,
+      "page_recall_at_5": 0.6,
+      "page_mrr_at_5": 0.3592,
+      "article_recall_at_3": 0.15,
+      "article_recall_at_5": 0.25,
+      "article_mrr_at_5": 0.17,
+      "mean_latency_ms": 8124.09
+    }
+  },
+  "ocr_breakdown": {
+    "Clean Text Pages": {
+      "count": 79,
+      "page_recall_at_3": 0.4304,
+      "page_recall_at_5": 0.557,
+      "page_mrr_at_5": 0.3962,
+      "article_recall_at_3": 0.2911,
+      "article_recall_at_5": 0.3797,
+      "article_mrr_at_5": 0.2572
+    },
+    "Scanned / OCR Pages": {
+      "count": 26,
+      "page_recall_at_3": 0.7308,
+      "page_recall_at_5": 0.8077,
+      "page_mrr_at_5": 0.6218,
+      "article_recall_at_3": 0.1154,
+      "article_recall_at_5": 0.1538,
+      "article_mrr_at_5": 0.0865
+    }
+  }
+}

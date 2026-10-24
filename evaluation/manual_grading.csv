@@ -1,0 +1,136 @@
+﻿question_id,group,question,expected_source,bot_answer,bot_citations,llm_judge_score_regulation,llm_judge_score_citation,llm_judge_reasoning,human_regulation_accuracy_1_5,human_citation_accuracy_1_5,human_notes
+tn_018,tốt nghiệp,Bản sao văn bằng được cấp từ sổ gốc có giá trị pháp lý tương đương bản chính không?,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 33, Trang 17)","Theo quy chế, giá trị pháp lý của bản sao văn bằng được cấp từ sổ gốc được quy định như sau:
+
+- Bản sao văn bằng, chứng chỉ từ sổ gốc có giá trị pháp lý sử dụng thay cho bản chính trong các giao dịch, trừ trường hợp pháp luật có quy định khác.
+- Trong trường hợp có căn cứ về việc bản sao giả mạo, không hợp pháp, cơ quan, tổ chức tiếp nhận có quyền yêu cầu người có bản sao xuất trình bản chính để đối chiếu hoặc tiến hành xác minh.","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 32, Trang 16)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_015,tín chỉ,Học phần song hành là gì?,"quy_che_dao_tao.pdf (Điều Điều 4, Trang 5)","Theo Quy chế đào tạo của Trường Đại học Công nghệ Thông tin, học phần song hành được quy định như sau:
+
+* Hai học phần được gọi là song hành khi sinh viên đăng ký học phần này thì bắt buộc phải đăng ký học phần kia.","quy_che_dao_tao.pdf (Điều Điều 3, Trang 5)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_004,tín chỉ,Trong học kỳ hè sinh viên được đăng ký tối đa bao nhiêu tín chỉ?,"quy_che_dao_tao.pdf (Điều Điều 8, Trang 7)","Căn cứ theo quy chế đào tạo, số tín chỉ sinh viên được đăng ký trong học kỳ hè được quy định như sau:
+- **Số tín chỉ tối đa:** Tổng số tín chỉ đăng ký không được vượt quá 12 tín chỉ.
+- **Trường hợp đặc biệt:** Nếu sinh viên muốn đăng ký vượt quá số tín chỉ tối đa thì phải được sự đồng ý của Hiệu trưởng.
+
+*Lưu ý thêm về điều kiện đăng ký trong học kỳ hè:*
+- Sinh viên chỉ được đăng ký học lại, cải thiện điểm, các môn học ngoại ngữ và học phần Thực tập doanh nghiệp.
+- Việc đăng ký học phần mới (học vượt, ngoại trừ Thực tập doanh nghiệp và các môn ngoại ngữ) chỉ dành cho sinh viên có điểm trung bình chung (ĐTBC) đạt từ 7,0 trở lên đến thời điểm đăng ký.","quy_che_dao_tao.pdf (Điều Điều 14, Trang 13)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+ck_010,câu khó,bằng tốt nghiệp của trường mình ghi xếp loại bằng tiếng Việt hay cả tiếng Anh và có ghi hệ chính quy không,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 9, Trang 5)","Dựa trên các đoạn trích quy chế được cung cấp, một số thông tin liên quan đến văn bằng và phụ lục văn bằng như sau:
+
+- **Về ngôn ngữ ghi trên văn bằng:** Ngôn ngữ chính ghi trên văn bằng, chứng chỉ là tiếng Việt. Trường hợp có ghi tiếng nước ngoài thì tiếng nước ngoài phải được ghi chính xác, phù hợp với nội dung tiếng Việt và kích cỡ chữ không lớn hơn kích cỡ chữ tiếng Việt.
+- **Về xếp loại và hình thức đào tạo:** 
+  + Bằng tốt nghiệp được cấp theo ngành đào tạo và xếp loại tốt nghiệp được xác định dựa trên điểm trung bình tích lũy toàn khóa.
+  + Các thông tin cụ thể như hình thức đào tạo và điểm xếp hạng tốt nghiệp được quy định rõ trong nội dung chính ghi trên phụ lục văn bằng.
+
+Tuy nhiên, quy chế hiện tại được cung cấp không đề cập đầy đủ và chi tiết về việc bằng tốt nghiệp (bản chính) in xếp loại bằng tiếng Việt hay song ngữ Việt - Anh, cũng như có ghi rõ ""hệ chính quy"" (hình thức đào tạo) trực tiếp trên mặt bằng hay chỉ ghi trên phụ lục văn bằng. 
+
+Sinh viên vui lòng liên hệ **Phòng Đào tạo** (email: phongdaotao@uit.edu.vn) hoặc Văn phòng các Chương trình Đặc biệt (OEP) để được giải đáp và hỗ trợ chính xác nhất.","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 11, Trang 7); 1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 11, Điều 12, Trang 7); 1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 12, Trang 7); quy_che_dao_tao.pdf (Điều Điều 34, Trang 26)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+hv_016,học vụ,Sinh viên học song ngành bị xếp loại học lực yếu ở ngành 2 thì bị xử lý ra sao?,"1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf (Điều Điều 8, Trang 5)","Hiện tại, quy chế đào tạo được cung cấp chưa có quy định cụ thể về việc xử lý đối với trường hợp sinh viên bị xếp loại học lực yếu ở chương trình/ngành thứ hai.
+
+Quy chế chỉ mới quy định về trường hợp của chương trình thứ nhất như sau:
+- Trong quá trình học cùng lúc hai chương trình, nếu điểm trung bình chung tích lũy (ĐTBCTL) của **chương trình thứ nhất** đạt dưới xếp loại trung bình hoặc thuộc diện cảnh báo học vụ thì sinh viên phải dừng học chương trình thứ hai ở học kỳ tiếp theo và bị loại khỏi danh sách đã đăng ký học chương trình thứ hai.
+
+Vì thông tin trong quy chế hiện tại không đề cập đầy đủ về trường hợp bị xếp loại học lực yếu ở ngành 2, sinh viên vui lòng liên hệ Phòng Đào tạo (phongdaotao@uit.edu.vn) hoặc Văn phòng các Chương trình Đặc biệt (OEP) để được hỗ trợ và giải đáp chi tiết.","quy_che_dao_tao.pdf (Điều Điều 18, Trang 16)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+hv_012,học vụ,Sinh viên đang bị cảnh báo học vụ có được phép xin chuyển ngành học không?,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","Theo quy chế đào tạo, điều kiện chuyển ngành/chương trình đào tạo được quy định như sau:
+
+1. **Quy định về chuyển ngành (Khoản 1 Điều 19):**
+Quy chế không quy định cấm sinh viên bị cảnh báo học vụ được chuyển ngành (khác với trường hợp *chuyển trường* yêu cầu ""không thuộc diện bị xử lý học vụ từ cảnh báo trở lên""). Tuy nhiên, để được xem xét chuyển ngành, sinh viên **bắt buộc phải đáp ứng đầy đủ tất cả các điều kiện sau**:
+- Sinh viên đạt điều kiện trúng tuyển của ngành/chương trình đào tạo trong cùng khóa tuyển sinh.
+- Không trong thời gian bị kỷ luật từ cảnh báo trở lên.
+- Không thuộc năm nhất.
+- Đạt số tín chỉ tích lũy tối thiểu theo quy định và có **điểm trung bình chung (ĐTBC) từ 6,0 trở lên**.
+- Được sự chấp thuận của Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo nơi chuyển đến và nơi chuyển đi.
+- Ngành/chương trình chuyển đến có đủ các điều kiện bảo đảm chất lượng, chưa vượt quá năng lực đào tạo theo quy định của Bộ Giáo dục và Đào tạo.
+
+2. **Lưu ý đối với sinh viên bị cảnh báo học vụ:**
+- Mặc dù bị cảnh báo học vụ (do học kỳ trước có điểm dưới mức quy định hoặc chưa đóng học phí theo Điều 16), nếu sinh viên vẫn duy trì được **ĐTBC tích lũy từ 6,0 trở lên**, không bị kỷ luật từ cảnh báo trở lên và đáp ứng toàn bộ các điều kiện trên thì vẫn được xem xét chuyển ngành.
+- Nếu ĐTBC dưới 6,0 thì sinh viên sẽ không đủ điều kiện chuyển ngành.","quy_che_dao_tao.pdf (Điều Điều 19, Trang 17); quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+hv_009,học vụ,Thời gian đào tạo tối đa cho phép để hoàn thành khóa học đại học tại UIT là mấy năm?,"quy_che_dao_tao.pdf (Điều Điều 2, Trang 4)","Hiện tại, ngữ cảnh quy chế được cung cấp không có đầy đủ thông tin về quy định thời gian đào tạo tối đa cho phép để hoàn thành khóa học đại học chung tại UIT:
+
+- Theo Điều 6 Quy chế đào tạo, văn bản chỉ mới đề cập đến thời gian thiết kế của khóa học (từ 3 đến 5 năm đối với văn bằng 1; từ 2 đến 3 năm đối với văn bằng 2; từ 1,5 đến 2,5 năm đối với liên thông), phần quy định cụ thể về thời gian tối đa hoàn thành khóa học chưa được trích dẫn đầy đủ.
+- Đối với riêng chương trình liên thông trình độ ĐH-ThS: Thời gian tối đa cho phép để người học hoàn thành chương trình là thời gian đào tạo chính thức (từ 4,5 đến 5,5 năm) cộng thêm 36 tháng (bao gồm thời gian nghỉ học tạm thời, tạm ngưng học tập và gia hạn).
+
+Do thông tin quy chế trích xuất chưa đầy đủ để trả lời chính xác cho khóa học đại học tiêu chuẩn, sinh viên vui lòng liên hệ Phòng Đào tạo Đại học (phongdaotao@uit.edu.vn) hoặc cổng thông tin OEP để được hỗ trợ cụ thể.","quy_che_dao_tao.pdf (Điều Điều 6, Trang 8); 650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf (Điều Điều 3, Trang 3)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_018,tín chỉ,"Để hoàn thành 1 tín chỉ, sinh viên cần dành bao nhiêu giờ tự học và chuẩn bị cá nhân?","quy_che_dao_tao.pdf (Điều Điều 3, Trang 4)","Theo quy chế đào tạo, đối với những học phần lý thuyết hoặc thực hành, thí nghiệm:
+- Để tiếp thu được một tín chỉ, sinh viên phải dành **ít nhất 30 giờ** chuẩn bị cá nhân (tự học).
+- Thời gian tự học cụ thể sẽ được quy định chi tiết trong đề cương chi tiết của từng học phần.","quy_che_dao_tao.pdf (Điều Điều 4, Trang 6)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_014,tín chỉ,Học phần học trước khác gì so với học phần tiên quyết?,"quy_che_dao_tao.pdf (Điều Điều 4, Trang 5)","Theo Quy chế đào tạo, điểm khác biệt giữa học phần tiên quyết và học phần học trước được quy định như sau:
+
+- **Học phần tiên quyết:** Là học phần bắt buộc sinh viên phải học trước và **phải tích lũy** (đạt kết quả tổng kết từ 5 điểm trở lên) mới được phép học tiếp sang học phần có liên quan khác.
+- **Học phần học trước:** Là học phần sinh viên phải học trước khi học các học phần có liên quan khác, tuy nhiên kết quả học phần này **có thể thi đạt hoặc không đạt** (không bắt buộc phải tích lũy mới được học tiếp môn sau).
+
+Như vậy, điểm khác biệt mấu chốt là học phần tiên quyết yêu cầu bắt buộc phải học và tích lũy (đạt điểm), trong khi học phần học trước chỉ yêu cầu đã từng học qua (kết quả đạt hay không đạt đều được chấp nhận).","quy_che_dao_tao.pdf (Điều Điều 3 (Môn học), Trang 5)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+ck_002,câu khó,vừa học lại môn F vừa học cải thiện môn C thì điểm tích lũy GPA toàn khóa tính toán như thế nào,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","Theo quy chế đào tạo, khi sinh viên vừa học lại (môn chưa đạt, điểm < 5,0) vừa học cải thiện (môn đã đạt, điểm ≥ 5,0), điểm trung bình chung tích lũy (ĐTBCTL) toàn khóa được tính toán theo các nguyên tắc sau:
+
+- **Nguyên tắc chọn điểm:** Điểm dùng để tính ĐTBCTL là **điểm học phần cao nhất trong các lần học** (cả đối với học phần học lại và học phần học cải thiện). Toàn bộ kết quả của các lần học vẫn được lưu đầy đủ trong kết quả học tập của sinh viên.
+- **Điều kiện tín chỉ tích lũy:** ĐTBCTL chỉ tính với trọng số là số tín chỉ đã được tích lũy (tức học phần phải đạt từ 5,0 điểm trở lên). Do đó, môn học lại cần phải đạt từ 5,0 điểm trở lên mới được tính vào ĐTBCTL.
+- **Công thức tính:** ĐTBCTL được tính theo công thức trung bình nhân với trọng số tín chỉ:
+  $$A = \frac{\sum_{i=1}^n (a_i \times n_i)}{\sum_{i=1}^n n_i}$$
+  Trong đó, $a_i$ là điểm cao nhất của học phần thứ $i$, $n_i$ là số tín chỉ của học phần thứ $i$.
+- **Các trường hợp loại trừ:** Không tính kết quả các học phần điều kiện (Giáo dục thể chất, Giáo dục Quốc phòng - An ninh) và các điểm I, điểm M, điểm BL vào ĐTBCTL.","quy_che_dao_tao.pdf (Điều Điều 24, Trang 20); quy_che_dao_tao.pdf (Điều Điều 14, Trang 13); quy_che_dao_tao.pdf (Điều Điều 24, Trang 21)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tn_006,tốt nghiệp,Điểm GPA tích lũy bao nhiêu thì tốt nghiệp loại Giỏi?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","Theo Quy chế đào tạo của Trường Đại học Công nghệ Thông tin, điểm tích lũy và điều kiện để xếp loại tốt nghiệp loại Giỏi được quy định như sau:
+
+- **Mức điểm tích lũy (ĐTBCTL) xếp loại Giỏi** (căn cứ theo Khoản 1 Điều 21 và Khoản 2 Điều 34):
+  + **Thang điểm 4:** 3,5
+  + **Thang điểm 10:** Từ 8,0 đến cận 9,0
+  + **Thang điểm 100:** Từ 80 đến cận 90
+
+- **Trường hợp hạ bậc tốt nghiệp từ Xuất sắc xuống Giỏi** (căn cứ theo Khoản 2 Điều 34):
+  Sinh viên có kết quả học tập toàn khóa đạt loại ""Xuất sắc"" sẽ bị giảm 1 bậc xếp loại tốt nghiệp xuống loại ""Giỏi"" nếu rơi vào một trong các trường hợp sau (nếu đồng thời rơi vào nhiều trường hợp thì cũng chỉ giảm 1 bậc):
+  + Có thời gian học tập tại Trường vượt quá 02 học kỳ so với thời gian thiết kế chương trình đào tạo.
+  + Trong thời gian học, đã bị kỷ luật mức cảnh cáo trở lên.
+  + Có số tín chỉ học lại vượt quá 5% tổng số tín chỉ toàn khóa.
+  + Điểm rèn luyện toàn khóa học < 75 điểm.","quy_che_dao_tao.pdf (Điều Điều 21, Trang 18); quy_che_dao_tao.pdf (Điều Điều 34, Trang 26)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_012,tín chỉ,Nếu bị điểm F môn tự chọn thì có bắt buộc phải học lại đúng môn đó không?,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","Căn cứ theo quy chế đào tạo, nếu bị điểm chưa đạt (dưới 5,0) ở môn tự chọn, sinh viên **không bắt buộc** phải học lại đúng môn đó. Cụ thể:
+
+- Sinh viên được phép lựa chọn:
+  + Đăng ký học lại chính học phần đó, hoặc
+  + Chọn học phần khác thay thế trong số các học phần tự chọn được quy định cho mỗi ngành đào tạo.
+- Ngoài ra, khi nộp hồ sơ xét tốt nghiệp, sinh viên có thể làm đơn xin hủy học phần tự chọn đã học (lưu ý: sinh viên không được hủy kết quả học tập trong lúc đang học).","quy_che_dao_tao.pdf (Điều Điều 14, Trang 13)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tn_012,tốt nghiệp,Thời hạn công nhận hiệu lực của chứng chỉ ngoại ngữ là bao lâu tính từ ngày cấp?,"170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf (Điều Điều 5, Trang 5)","Theo Quy chế Chuẩn trình độ ngoại ngữ tại ĐHQG-HCM, thời hạn công nhận hiệu lực của chứng chỉ ngoại ngữ được quy định như sau:
+
+* Chứng chỉ ngoại ngữ được công nhận trong thời hạn **hai (02) năm** tính từ ngày cấp cho đến ngày đăng ký xác nhận đạt chuẩn.","170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf (Điều Điều 5, Trang 4)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+td_013,thi-điểm,Những vật dụng nào sinh viên bị cấm tuyệt đối mang vào phòng thi?,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 13, Trang 9)","Theo quy chế thi, sinh viên không được mang vào khu vực thi và phòng thi các vật dụng sau:
+
+- Vũ khí, chất gây nổ, gây cháy.
+- Bia, rượu (và không được hút thuốc trong phòng thi).
+- Các vật dụng gây nguy hại khác.
+- Các vật dụng giúp gian lận trong khi thi, tài liệu bị cấm sử dụng, phương tiện thông tin liên lạc / phương tiện kỹ thuật thu, phát, truyền tin, ghi âm, ghi hình, thiết bị chứa đựng thông tin có thể lợi dụng để làm bài thi.","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 13, Trang 9); 1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 23, Trang 21)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tc_005,tín chỉ,em lỡ đăng ký môn rồi giờ muốn rút bớt học phần thì làm sao và có được trả lại học phí ko,"quy_che_dao_tao.pdf (Điều Điều 9, Trang 8)","Hiện tại, các đoạn trích quy chế được cung cấp không có thông tin chi tiết về thủ tục rút bớt học phần sau khi đã đăng ký cũng như quy định về việc hoàn trả học phí trong trường hợp này.
+
+Để được hướng dẫn cụ thể về quy trình rút học phần và chính sách học phí liên quan, bạn vui lòng liên hệ:
+- Phòng Đào tạo qua email: phongdaotao@uit.edu.vn
+- Hoặc gửi yêu cầu hỗ trợ qua Cổng thông tin đào tạo (OEP).",Không có trích dẫn hợp lệ,4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+hv_008,học vụ,"Sau khi hết thời gian tạm dừng học tập, sinh viên cần làm thủ tục gì để quay lại học tiếp?","quy_che_dao_tao.pdf (Điều Điều 17, Trang 15)","Căn cứ theo quy chế đào tạo hiện tại:
+- Sinh viên tạm dừng học tập, khi muốn trở lại học tiếp tại Trường phải hoàn tất thủ tục nhập học theo quy định của Trường.
+- Tuy nhiên, văn bản quy chế hiện tại chưa quy định chi tiết về các bước, biểu mẫu hay hồ sơ cụ thể để thực hiện thủ tục nhập học trở lại. Sinh viên vui lòng liên hệ Phòng Đào tạo (phongdaotao@uit.edu.vn) hoặc OEP để được hướng dẫn chi tiết.","quy_che_dao_tao.pdf (Điều Điều 17, Trang 16)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+hv_010,học vụ,Sinh viên muốn chuyển ngành học trong trường cần đáp ứng những điều kiện gì?,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","Căn cứ theo Khoản 1 Điều 19 Quy chế đào tạo, sinh viên được xem xét chuyển ngành học nếu đáp ứng đủ các điều kiện sau:
+- Đạt điều kiện trúng tuyển của ngành/chương trình đào tạo trong cùng khóa tuyển sinh;
+- Không trong thời gian bị kỷ luật từ cảnh báo trở lên;
+- Không thuộc đối tượng sinh viên năm nhất;
+- Đạt số tín chỉ tích lũy tối thiểu theo quy định tại Khoản 4 Điều 10 và có điểm trung bình chung (ĐTBC) từ 6,0 trở lên;
+- Được sự chấp thuận của Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo nơi chuyển đến và nơi chuyển đi;
+- Ngành/chương trình chuyển đến có đủ các điều kiện bảo đảm chất lượng, chưa vượt quá năng lực đào tạo theo quy định hiện hành của Bộ Giáo dục và Đào tạo.
+
+*Lưu ý:* Sinh viên theo học chương trình nâng cao, chương trình tiên tiến và chương trình tài năng còn phải thực hiện theo các quy định riêng (nếu có).","quy_che_dao_tao.pdf (Điều Điều 19, Trang 17)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tn_001,tốt nghiệp,Điều kiện để sinh viên được công nhận tốt nghiệp đại học tại UIT gồm những gì?,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","Theo Điều 33 Quy chế đào tạo của Trường Đại học Công nghệ Thông tin, để được xét cấp bằng và công nhận tốt nghiệp đại học, sinh viên cần đáp ứng đủ các điều kiện sau:
+
+- Cho đến thời điểm xét tốt nghiệp, sinh viên không đang trong thời gian bị truy cứu trách nhiệm hình sự hoặc bị kỷ luật từ mức đình chỉ học tập trở lên.
+- Đã hoàn thành nghĩa vụ học phí.
+- Đã hoàn thành các môn học, tích lũy đủ số tín chỉ theo đúng chương trình đào tạo.
+- Đã hoàn thành các môn học Giáo dục thể chất.
+- Có chứng chỉ Giáo dục quốc phòng - An ninh.
+- Đạt chuẩn ngoại ngữ xét tốt nghiệp.
+- Đạt điểm rèn luyện tích lũy tối thiểu là 50 điểm.
+- Đã hoàn trả sách mượn cho Thư viện.
+
+Căn cứ vào biên bản và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng sẽ ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.","quy_che_dao_tao.pdf (Điều Điều 33, Trang 25)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tn_014,tốt nghiệp,Thời hạn cấp bằng tốt nghiệp đại học chính thức là bao nhiêu ngày làm việc kể từ khi có quyết định tốt nghiệp?,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 21, Trang 12)","Theo các quy chế hiện hành được cung cấp, thời hạn cấp bằng tốt nghiệp được quy định như sau:
+
+- **Theo Quy chế đào tạo của Trường:** Sinh viên đủ điều kiện tốt nghiệp được cấp bằng tốt nghiệp **trong vòng 03 tháng** tính từ ngày có quyết định công nhận tốt nghiệp (quy chế tính theo tháng, không quy định số ngày làm việc cụ thể kể từ ngày có quyết định công nhận tốt nghiệp).
+- **Theo Quy chế văn bằng, chứng chỉ của ĐHQG-HCM:** Người có thẩm quyền có trách nhiệm cấp văn bằng cho người học **chậm nhất là 30 ngày làm việc** kể từ ngày hồ sơ tốt nghiệp được hoàn thiện theo quy định của ĐHQG-HCM.
+
+Trong thời gian chờ cấp văn bằng chính thức, người học đủ điều kiện cấp bằng tốt nghiệp sẽ được cấp giấy chứng nhận tốt nghiệp tạm thời.","quy_che_dao_tao.pdf (Điều Điều 33, Trang 26); 1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 21, Trang 11)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
+tn_008,tốt nghiệp,Thi lại hoặc học lại vượt quá bao nhiêu phần trăm tín chỉ thì bị hạ bậc tốt nghiệp?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","Theo quy chế đào tạo, quy định về việc giảm bậc tốt nghiệp như sau:
+
+- **Đối tượng áp dụng:** Quy định hạ bậc tốt nghiệp chỉ áp dụng riêng đối với những sinh viên có kết quả học tập toàn khóa đạt loại **""Xuất sắc""** (loại tốt nghiệp sẽ giảm xuống 1 bậc).
+- **Mức phần trăm tín chỉ học lại:** Sinh viên sẽ bị giảm 1 bậc tốt nghiệp nếu **có số tín chỉ học lại vượt quá 5% tổng số tín chỉ toàn khóa**.
+- **Về việc thi lại:** Quy chế được cung cấp không có quy định về việc ""thi lại"" làm hạ bậc tốt nghiệp, mà chỉ xét số tín chỉ học lại.","quy_che_dao_tao.pdf (Điều Điều 34, Trang 26)",4,4,Tự động đánh giá dự phòng do lỗi kết nối LLM judge.,,,
