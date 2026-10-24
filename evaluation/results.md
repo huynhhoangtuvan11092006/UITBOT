@@ -1,8 +1,8 @@
 # UITBOT Evaluation & Benchmarking Report (Phase 5 & 5b)
 
 > **Execution Metadata:**
-> - **Date & Time:** `2026-10-24 02:15:00`
-> - **Git Commit:** `738370e7` (`main`)
+> - **Date & Time:** `2026-10-24 02:16:37`
+> - **Git Commit:** `98431f2` (`main`)
 > - **Platform:** `Linux 6.18.54.1-microsoft-standard-WSL2 (Python 3.12.15)`
 > - **Evaluation Dataset:** `evaluation/golden_dataset.jsonl` (105 verified questions, 0 synthetic)
 > - **Statistical Confidence:** Non-parametric 95% Bootstrap Confidence Intervals (B = 1,000 resamples)
