@@ -16,7 +16,7 @@ Trợ lý AI thông minh hỗ trợ sinh viên tra cứu nhanh chóng, chính x�
 
 Hệ thống được thiết kế theo tiêu chuẩn công nghiệp với kiến trúc **4 tầng phòng vệ (Defense-in-Depth)** và kiểm thử thực nghiệm trên 105 câu hỏi thực tế từ sinh viên:
 
-| 🎯 89.5% | ⚡ 291ms | 🛡️ 100% | 🏆 95.0% |
+| 89.5% | 291ms | 100% | 95.0% |
 |:---:|:---:|:---:|:---:|
 | **Độ phủ tài liệu (Top-50)** | **Độ trễ Hybrid Retrieval** | **Loại trừ trích dẫn ảo** | **Độ chuẩn xác câu trả lời** |
 | *74.4% câu trượt Top-5 nằm trong Top-50* | *Dense pgvector + BM25 Okapi* | *Deterministic Python Validator* | *19/20 câu đạt độ tin cậy tuyệt đối* |
