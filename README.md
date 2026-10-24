@@ -19,7 +19,7 @@ Trợ lý AI thông minh hỗ trợ sinh viên tra cứu nhanh chóng, chính x�
 - **Guardrails 4 lớp chống ảo giác**:
   1. *Input Limiter*: Giới hạn $\le 1000$ ký tự, chống tràn bộ nhớ và tấn công DoS.
   2. *Anti-Prompt Injection*: Tự động chặn các mẫu tấn công chiếm quyền prompt (Jailbreak, DAN).
-  3. *Evidence Gate ($\tau=0.02$)*: Từ chối an toàn khi điểm bằng chứng thấp, kèm email liên hệ Phòng Đào tạo (`phongdaotao@uit.edu.vn`).
+  3. *Evidence Gate*: Từ chối an toàn khi điểm bằng chứng thấp, kèm email liên hệ Phòng Đào tạo (`phongdaotao@uit.edu.vn`).
   4. *Deterministic Citation Validator*: Xác thực chéo nguồn trích dẫn bằng Python, loại bỏ 100% citation bịa đặt.
 - **Real-Time Streaming SSE**: Truyền luồng phản hồi thời gian thực qua Server-Sent Events, tích hợp fallback trích xuất trực tiếp khi cổng LLM gặp sự cố.
 
@@ -74,7 +74,7 @@ docker compose exec -T app python scripts/evaluate_all.py
 
 *Hệ thống được kiểm thử thực tế trên bộ câu hỏi chuẩn **105 câu hỏi thực tế** với các văn bản quy chế thật:*
 
-| 🎯 89.5% | ⚡ 291ms | 🛡️ 100% | 🏆 95.0% |
+| 89.5% | 291ms | 100% | 95.0% |
 |:---:|:---:|:---:|:---:|
 | **Độ phủ tìm kiếm (Top-50)** | **Tốc độ truy xuất nhanh** | **Chống ảo giác trích dẫn** | **Độ chính xác câu trả lời** |
 
@@ -91,7 +91,7 @@ docker compose exec -T app python scripts/evaluate_all.py
 |:---:|:---:|:---|
 | **Top 5 đoạn văn** | **59.1%** | Cửa sổ phản hồi chuẩn đưa vào câu trả lời của Chatbot |
 | **Top 20 đoạn văn** | **80.0%** | Tăng vọt +20.9% khả năng tìm trúng tài liệu |
-| **Top 50 đoạn văn** | **89.5% 🎯** | **Gần 90% câu hỏi đều tìm thấy văn bản quy chế chính xác** |
+| **Top 50 đoạn văn** | **89.5%** | **Gần 90% câu hỏi đều tìm thấy văn bản quy chế chính xác** |
 
 > 💡 **Ý nghĩa**: Có đến **74.4% câu hỏi trượt ở Top-5 thực chất đã nằm trong Top-50**. Bộ tìm kiếm hoạt động rất xuất sắc, điểm thắt nút chỉ nằm ở kích thước context gửi cho LLM.
 
