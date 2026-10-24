@@ -36,19 +36,23 @@ INTENT_TEST_SET: list[dict[str, str]] = [
     {"query": "Chúc một ngày tốt lành", "expected_intent": "SMALL_TALK"},
     {"query": "Chào buổi sáng", "expected_intent": "SMALL_TALK"},
     {"query": "Rất vui được gặp bạn", "expected_intent": "SMALL_TALK"},
-
     # OUT_OF_SCOPE (10)
     {"query": "Thời tiết hôm nay ở Thủ Đức thế nào?", "expected_intent": "OUT_OF_SCOPE"},
     {"query": "Chỉ mình cách nấu món bún bò Huế ngon đi", "expected_intent": "OUT_OF_SCOPE"},
-    {"query": "Viết giúp mình một đoạn script Python tính số Fibonacci", "expected_intent": "OUT_OF_SCOPE"},
+    {
+        "query": "Viết giúp mình một đoạn script Python tính số Fibonacci",
+        "expected_intent": "OUT_OF_SCOPE",
+    },
     {"query": "Ai là người phát minh ra máy tính?", "expected_intent": "OUT_OF_SCOPE"},
     {"query": "Giá vàng hôm nay tăng hay giảm?", "expected_intent": "OUT_OF_SCOPE"},
     {"query": "Bộ phim điện ảnh nào đang hot ngoài rạp?", "expected_intent": "OUT_OF_SCOPE"},
-    {"query": "Cách sửa lỗi crash màn hình xanh trên Windows 11", "expected_intent": "OUT_OF_SCOPE"},
+    {
+        "query": "Cách sửa lỗi crash màn hình xanh trên Windows 11",
+        "expected_intent": "OUT_OF_SCOPE",
+    },
     {"query": "Quán cà phê nào gần trường UIT view đẹp?", "expected_intent": "OUT_OF_SCOPE"},
     {"query": "Đội bóng nào vừa vô địch Cúp C1 Châu Âu?", "expected_intent": "OUT_OF_SCOPE"},
     {"query": "Giải thích định luật vạn vật hấp dẫn của Newton", "expected_intent": "OUT_OF_SCOPE"},
-
     # AMBIGUOUS (10)
     {"query": "sao vậy", "expected_intent": "AMBIGUOUS"},
     {"query": "cái đó", "expected_intent": "AMBIGUOUS"},
@@ -60,18 +64,44 @@ INTENT_TEST_SET: list[dict[str, str]] = [
     {"query": "vậy hả", "expected_intent": "AMBIGUOUS"},
     {"query": "thật không", "expected_intent": "AMBIGUOUS"},
     {"query": "ủa", "expected_intent": "AMBIGUOUS"},
-
     # UIT_REGULATION (10)
-    {"query": "Một kỳ chính em được đăng ký tối đa bao nhiêu tín chỉ?", "expected_intent": "UIT_REGULATION"},
-    {"query": "Điều kiện để được xét tốt nghiệp ra trường là gì?", "expected_intent": "UIT_REGULATION"},
+    {
+        "query": "Một kỳ chính em được đăng ký tối đa bao nhiêu tín chỉ?",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Điều kiện để được xét tốt nghiệp ra trường là gì?",
+        "expected_intent": "UIT_REGULATION",
+    },
     {"query": "Bị cảnh báo học vụ mức 2 thì xử lý thế nào?", "expected_intent": "UIT_REGULATION"},
-    {"query": "Quy định xin hoãn thi kết thúc học phần vì lý do ốm đau?", "expected_intent": "UIT_REGULATION"},
-    {"query": "Học phí một tín chỉ chương trình chuẩn là bao nhiêu?", "expected_intent": "UIT_REGULATION"},
-    {"query": "Quy chế công nhận chứng chỉ tiếng Anh IELTS để xét tốt nghiệp", "expected_intent": "UIT_REGULATION"},
-    {"query": "Thời gian tối đa để hoàn thành chương trình đào tạo chính quy?", "expected_intent": "UIT_REGULATION"},
-    {"query": "Cách tính điểm trung bình tích lũy theo thang điểm 4", "expected_intent": "UIT_REGULATION"},
-    {"query": "Thủ tục xin nghỉ học tạm thời bảo lưu kết quả học tập", "expected_intent": "UIT_REGULATION"},
-    {"query": "Sinh viên bị điểm F có được thi lại không hay phải học lại?", "expected_intent": "UIT_REGULATION"},
+    {
+        "query": "Quy định xin hoãn thi kết thúc học phần vì lý do ốm đau?",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Học phí một tín chỉ chương trình chuẩn là bao nhiêu?",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Quy chế công nhận chứng chỉ tiếng Anh IELTS để xét tốt nghiệp",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Thời gian tối đa để hoàn thành chương trình đào tạo chính quy?",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Cách tính điểm trung bình tích lũy theo thang điểm 4",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Thủ tục xin nghỉ học tạm thời bảo lưu kết quả học tập",
+        "expected_intent": "UIT_REGULATION",
+    },
+    {
+        "query": "Sinh viên bị điểm F có được thi lại không hay phải học lại?",
+        "expected_intent": "UIT_REGULATION",
+    },
 ]
 
 # Evidence Gate Test Queries:
@@ -168,10 +198,7 @@ def evaluate_intents() -> IntentEvalSummary:
             correct += 1
             class_correct[expected] += 1
 
-    per_class = {
-        cat: round(class_correct[cat] / max(class_total[cat], 1), 4)
-        for cat in categories
-    }
+    per_class = {cat: round(class_correct[cat] / max(class_total[cat], 1), 4) for cat in categories}
 
     return IntentEvalSummary(
         total=total,

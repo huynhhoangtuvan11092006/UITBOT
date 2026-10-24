@@ -55,8 +55,7 @@ def test_article_match():
         score=0.9,
     )
     assert (
-        is_article_match(chunk, {"source_file": "quy_che_dao_tao.pdf", "article": "Điều 8"})
-        is True
+        is_article_match(chunk, {"source_file": "quy_che_dao_tao.pdf", "article": "Điều 8"}) is True
     )
     assert (
         is_article_match(chunk, {"source_file": "quy_che_dao_tao.pdf", "article": "Điều 9"})
@@ -97,8 +96,8 @@ def test_compute_latency_stats():
 
 def test_bootstrap_ci():
     from evaluation.metrics import bootstrap_ci
+
     values = [1.0, 1.0, 1.0, 0.0, 0.0]  # mean = 0.6
     low, high = bootstrap_ci(values, n_boot=500, ci=0.95, seed=42)
     assert 0.1 <= low <= 0.6
     assert 0.6 <= high <= 1.0
-

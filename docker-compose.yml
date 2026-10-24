@@ -43,7 +43,8 @@ services:
       - ./scripts:/app/scripts
       - ./tests:/app/tests
       - ./evaluation:/app/evaluation
-      - hf_cache:/root/.cache/huggingface
+      - ./pyproject.toml:/app/pyproject.toml
+      - hf_cache:/home/uitbot/.cache/huggingface
     depends_on:
       db:
         condition: service_healthy

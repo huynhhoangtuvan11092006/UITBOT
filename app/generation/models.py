@@ -40,7 +40,13 @@ class ChatRequest(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    message: str = Field(..., validation_alias="question", description="User query or message")
+    message: str = Field(
+        ...,
+        min_length=1,
+        max_length=1000,
+        validation_alias="question",
+        description="User query or message (max 1000 characters)",
+    )
     session_id: str | None = None
     history: list[dict[str, str]] = Field(default_factory=list)
 

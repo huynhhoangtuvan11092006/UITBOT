@@ -158,10 +158,15 @@ DRAFT_ITEMS = [
         "id": "tc_020",
         "question": "Đăng ký trễ hạn môn học thì sinh viên phải xử lý thế nào theo quy định học vụ?",
         "group": "tín chỉ",
-        "relevant": [{"source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf", "page": 3, "article": None}],
+        "relevant": [
+            {
+                "source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf",
+                "page": 3,
+                "article": None,
+            }
+        ],
         "verified": False,
     },
-
     # =========================================================================
     # NHÓM 2: HỌC VỤ (22 câu)
     # =========================================================================
@@ -267,59 +272,106 @@ DRAFT_ITEMS = [
         "id": "hv_015",
         "question": "Học cùng lúc hai chương trình (song ngành) cần thỏa mãn điều kiện gì?",
         "group": "học vụ",
-        "relevant": [{"source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf", "page": 4, "article": "Điều 6"}],
+        "relevant": [
+            {
+                "source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf",
+                "page": 4,
+                "article": "Điều 6",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_016",
         "question": "Sinh viên học song ngành bị xếp loại học lực yếu ở ngành 2 thì bị xử lý ra sao?",
         "group": "học vụ",
-        "relevant": [{"source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf", "page": 5, "article": "Điều 8"}],
+        "relevant": [
+            {
+                "source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf",
+                "page": 5,
+                "article": "Điều 8",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_017",
         "question": "học phí song ngành đại học quốc gia tính như thế nào",
         "group": "học vụ",
-        "relevant": [{"source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf", "page": 5, "article": "Điều 9"}],
+        "relevant": [
+            {
+                "source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf",
+                "page": 5,
+                "article": "Điều 9",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_018",
         "question": "điều kiện xét tuyển liên thông từ đại học lên thạc sĩ BS-MS là gì",
         "group": "học vụ",
-        "relevant": [{"source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf", "page": 6, "article": "Điều 7"}],
+        "relevant": [
+            {
+                "source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf",
+                "page": 6,
+                "article": "Điều 7",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_019",
         "question": "Thời gian tối đa để hoàn thành chương trình liên thông BS-MS là bao lâu?",
         "group": "học vụ",
-        "relevant": [{"source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf", "page": 4, "article": "Điều 4"}],
+        "relevant": [
+            {
+                "source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf",
+                "page": 4,
+                "article": "Điều 4",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_020",
         "question": "Người học liên thông BS-MS được cấp văn bằng tốt nghiệp như thế nào?",
         "group": "học vụ",
-        "relevant": [{"source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf", "page": 7, "article": "Điều 9"}],
+        "relevant": [
+            {
+                "source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf",
+                "page": 7,
+                "article": "Điều 9",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_021",
         "question": "Quy trình nộp đơn xin cấp giấy xác nhận sinh viên tại UIT thực hiện qua kênh nào?",
         "group": "học vụ",
-        "relevant": [{"source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf", "page": 4, "article": None}],
+        "relevant": [
+            {
+                "source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf",
+                "page": 4,
+                "article": None,
+            }
+        ],
         "verified": False,
     },
     {
         "id": "hv_022",
         "question": "Thời gian giải quyết các đơn từ học vụ thông thường của sinh viên là mấy ngày làm việc?",
         "group": "học vụ",
-        "relevant": [{"source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf", "page": 5, "article": None}],
+        "relevant": [
+            {
+                "source_file": "28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf",
+                "page": 5,
+                "article": None,
+            }
+        ],
         "verified": False,
     },
-
     # =========================================================================
     # NHÓM 3: THI - ĐIỂM (22 câu)
     # =========================================================================
@@ -397,49 +449,91 @@ DRAFT_ITEMS = [
         "id": "td_011",
         "question": "Sinh viên đi thi muộn bao nhiêu phút thì không được phép vào phòng thi?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 9, "article": "Điều 13"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 9,
+                "article": "Điều 13",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_012",
         "question": "Khi đi thi sinh viên bắt buộc phải xuất trình giấy tờ tùy thân nào?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 8, "article": "Điều 13"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 8,
+                "article": "Điều 13",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_013",
         "question": "Những vật dụng nào sinh viên bị cấm tuyệt đối mang vào phòng thi?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 9, "article": "Điều 13"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 9,
+                "article": "Điều 13",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_014",
         "question": "Sinh viên mang điện thoại vào phòng thi dù tắt nguồn thì bị xử lý kỷ luật thế nào?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 11, "article": "Điều 17"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 11,
+                "article": "Điều 17",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_015",
         "question": "Sinh viên nhờ người khác thi hộ hoặc đi thi hộ người khác thì bị kỷ luật gì?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 12, "article": "Điều 17"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 12,
+                "article": "Điều 17",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_016",
         "question": "Thời hạn sinh viên được nộp đơn phúc khảo bài thi kết thúc học phần là bao lâu?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 10, "article": "Điều 15"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 10,
+                "article": "Điều 15",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_017",
         "question": "Sau bao nhiêu ngày kể từ khi hết hạn nộp đơn phúc khảo thì trường công bố điểm phúc khảo?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 10, "article": "Điều 15"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 10,
+                "article": "Điều 15",
+            }
+        ],
         "verified": False,
     },
     {
@@ -453,14 +547,26 @@ DRAFT_ITEMS = [
         "id": "td_019",
         "question": "Yêu cầu kỹ thuật đối với khu vực thi trực tuyến của sinh viên là gì?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf", "page": 3, "article": "Điều 5"}],
+        "relevant": [
+            {
+                "source_file": "809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf",
+                "page": 3,
+                "article": "Điều 5",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "td_020",
         "question": "Thi trực tuyến bị rớt mạng hoặc mất kết nối thì sinh viên phải xử lý thế nào?",
         "group": "thi-điểm",
-        "relevant": [{"source_file": "809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf", "page": 6, "article": "Điều 12"}],
+        "relevant": [
+            {
+                "source_file": "809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf",
+                "page": 6,
+                "article": "Điều 12",
+            }
+        ],
         "verified": False,
     },
     {
@@ -477,7 +583,6 @@ DRAFT_ITEMS = [
         "relevant": [{"source_file": "quy_che_dao_tao.pdf", "page": 17, "article": "Điều 20"}],
         "verified": False,
     },
-
     # =========================================================================
     # NHÓM 4: TỐT NGHIỆP & CHUẨN ĐẦU RA (21 câu)
     # =========================================================================
@@ -548,77 +653,143 @@ DRAFT_ITEMS = [
         "id": "tn_010",
         "question": "Chuẩn trình độ ngoại ngữ đầu ra đối với sinh viên tốt nghiệp đại học tối thiểu là bậc mấy?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 4, "article": "Điều 4"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 4,
+                "article": "Điều 4",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_011",
         "question": "Chứng chỉ tiếng Anh nào được công nhận đạt chuẩn tốt nghiệp bậc 3/6 của ĐHQG-HCM?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 4, "article": "Điều 4"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 4,
+                "article": "Điều 4",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_012",
         "question": "Thời hạn công nhận hiệu lực của chứng chỉ ngoại ngữ là bao lâu tính từ ngày cấp?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 5, "article": "Điều 5"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 5,
+                "article": "Điều 5",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_013",
         "question": "Chứng chỉ tiếng Nhật trình độ nào tương đương chuẩn ngoại ngữ bậc 3/6 ĐHQG-HCM?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 5, "article": "Điều 5"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 5,
+                "article": "Điều 5",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_014",
         "question": "Thời hạn cấp bằng tốt nghiệp đại học chính thức là bao nhiêu ngày làm việc kể từ khi có quyết định tốt nghiệp?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 12, "article": "Điều 21"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 12,
+                "article": "Điều 21",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_015",
         "question": "Văn bằng tốt nghiệp đại học được cấp mấy bản chính thức cho mỗi sinh viên?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 3, "article": "Điều 2"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 3,
+                "article": "Điều 2",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_016",
         "question": "Bị mất bằng tốt nghiệp đại học bản chính thì có được cấp lại bản chính không?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 4, "article": "Điều 2"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 4,
+                "article": "Điều 2",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_017",
         "question": "Thủ tục xin cấp bản sao văn bằng chứng chỉ từ sổ gốc gồm những giấy tờ gì?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 17, "article": "Điều 33"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 17,
+                "article": "Điều 33",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_018",
         "question": "Bản sao văn bằng được cấp từ sổ gốc có giá trị pháp lý tương đương bản chính không?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 17, "article": "Điều 33"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 17,
+                "article": "Điều 33",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_019",
         "question": "Hồ sơ đề nghị chỉnh sửa nội dung thông tin trên bằng tốt nghiệp gồm những gì?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 14, "article": "Điều 27"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 14,
+                "article": "Điều 27",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "tn_020",
         "question": "Những trường hợp nào bằng tốt nghiệp đại học bị nhà trường thu hồi hoặc hủy bỏ?",
         "group": "tốt nghiệp",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 15, "article": "Điều 29"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 15,
+                "article": "Điều 29",
+            }
+        ],
         "verified": False,
     },
     {
@@ -628,7 +799,6 @@ DRAFT_ITEMS = [
         "relevant": [{"source_file": "quy_che_dao_tao.pdf", "page": 22, "article": "Điều 27"}],
         "verified": False,
     },
-
     # =========================================================================
     # NHÓM 5: CÂU KHÓ & KHẨU NGỮ TỰ NHIÊN (20 câu)
     # =========================================================================
@@ -650,7 +820,13 @@ DRAFT_ITEMS = [
         "id": "ck_003",
         "question": "em đang học năm 2 ngành kỹ thuật máy tính muốn xin học song bằng sang ngành khoa học máy tính thì cần chuẩn bị hồ sơ gì và nộp ở đâu",
         "group": "câu khó",
-        "relevant": [{"source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf", "page": 4, "article": "Điều 7"}],
+        "relevant": [
+            {
+                "source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf",
+                "page": 4,
+                "article": "Điều 7",
+            }
+        ],
         "verified": False,
     },
     {
@@ -685,35 +861,65 @@ DRAFT_ITEMS = [
         "id": "ck_008",
         "question": "sinh viên năm 3 có điểm trung bình 6.8 muốn đăng ký chương trình tích hợp BS-MS lên thạc sĩ được không",
         "group": "câu khó",
-        "relevant": [{"source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf", "page": 6, "article": "Điều 7"}],
+        "relevant": [
+            {
+                "source_file": "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf",
+                "page": 6,
+                "article": "Điều 7",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_009",
         "question": "đang trong phòng thi mà bị xỉu hay đau bụng dữ dội phải đi cấp cứu thì điểm bài thi hôm đó xử lý ra sao",
         "group": "câu khó",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 9, "article": "Điều 13"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 9,
+                "article": "Điều 13",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_010",
         "question": "bằng tốt nghiệp của trường mình ghi xếp loại bằng tiếng Việt hay cả tiếng Anh và có ghi hệ chính quy không",
         "group": "câu khó",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 5, "article": "Điều 9"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 5,
+                "article": "Điều 9",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_011",
         "question": "em nộp chứng chỉ tiếng Anh TOEIC 4 kỹ năng hay 2 kỹ năng mới được trường chấp nhận chuẩn đầu ra",
         "group": "câu khó",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 4, "article": "Điều 4"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 4,
+                "article": "Điều 4",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_012",
         "question": "chứng chỉ ngoại ngữ thi từ năm nhất đến năm tư tốt nghiệp còn hạn sử dụng để xét chuẩn đầu ra không",
         "group": "câu khó",
-        "relevant": [{"source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf", "page": 5, "article": "Điều 5"}],
+        "relevant": [
+            {
+                "source_file": "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf",
+                "page": 5,
+                "article": "Điều 5",
+            }
+        ],
         "verified": False,
     },
     {
@@ -727,21 +933,39 @@ DRAFT_ITEMS = [
         "id": "ck_014",
         "question": "sinh viên bị kỷ luật đình chỉ thi 1 môn thì môn đó bị điểm mấy và có bị đình chỉ các môn thi tiếp theo không",
         "group": "câu khó",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 11, "article": "Điều 17"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 11,
+                "article": "Điều 17",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_015",
         "question": "học cùng lúc 2 ngành thì môn trùng nhau ở ngành 1 có được chuyển điểm tự động sang ngành 2 không",
         "group": "câu khó",
-        "relevant": [{"source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf", "page": 5, "article": "Điều 9"}],
+        "relevant": [
+            {
+                "source_file": "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf",
+                "page": 5,
+                "article": "Điều 9",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_016",
         "question": "bị mất thẻ sinh viên trước giờ thi 15 phút thì có được vào phòng thi làm bài không và cần làm gì",
         "group": "câu khó",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 8, "article": "Điều 13"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 8,
+                "article": "Điều 13",
+            }
+        ],
         "verified": False,
     },
     {
@@ -755,14 +979,26 @@ DRAFT_ITEMS = [
         "id": "ck_018",
         "question": "nếu điểm phúc khảo lệch so với điểm ban đầu thì khi nào được sửa điểm chính thức vào hệ thống",
         "group": "câu khó",
-        "relevant": [{"source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf", "page": 10, "article": "Điều 15"}],
+        "relevant": [
+            {
+                "source_file": "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf",
+                "page": 10,
+                "article": "Điều 15",
+            }
+        ],
         "verified": False,
     },
     {
         "id": "ck_019",
         "question": "chứng chỉ tin học MOS hay IC3 có được công nhận chuẩn đầu ra tin học ở trường không",
         "group": "câu khó",
-        "relevant": [{"source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf", "page": 4, "article": "Điều 2"}],
+        "relevant": [
+            {
+                "source_file": "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf",
+                "page": 4,
+                "article": "Điều 2",
+            }
+        ],
         "verified": False,
     },
     {

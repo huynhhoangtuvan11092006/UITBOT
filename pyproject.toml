@@ -4,6 +4,24 @@ version = "0.2.0"
 description = "Vietnamese RAG assistant for UIT academic regulations"
 requires-python = ">=3.12"
 readme = "README.md"
+dependencies = [
+    "fastapi==0.115.12",
+    "uvicorn[standard]==0.34.2",
+    "pydantic==2.11.3",
+    "pydantic-settings==2.9.1",
+    "python-dotenv==1.1.0",
+    "psycopg[binary]==3.2.6",
+    "psycopg-pool==3.2.6",
+    "sentence-transformers==4.1.0",
+    "rank-bm25==0.2.2",
+    "openai==1.76.0",
+    "langfuse==2.60.5",
+    "pymupdf==1.25.5",
+    "pytesseract==0.3.13",
+    "pillow==11.2.1",
+    "underthesea==9.5.0",
+    "httpx==0.28.1",
+]
 
 [tool.ruff]
 target-version = "py312"
@@ -13,6 +31,7 @@ exclude = [".venv", "data"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

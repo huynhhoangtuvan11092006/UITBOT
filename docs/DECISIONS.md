@@ -82,8 +82,50 @@ Reason: guarantees immunity against Cross-Site Scripting (XSS) attacks from mali
 Streamed generation operates over Server-Sent Events (`POST /api/v1/chat/stream`) with progressive DOM updates and a blinking cursor. Network disruptions present a clear error bubble equipped with an inline "Thử lại" (Retry) action.
 Reason: provides immediate visual feedback to the user while maintaining high resilience in adverse network conditions.
 
-### Client-side state persistence in localStorage
-Chat messages and persistent session UUIDs are stored client-side in browser `localStorage`, with an explicit "Làm mới hội thoại" (Reset) option.
-Reason: users do not lose their consultation history across page reloads without requiring server-side session databases.
+## Phase 5 - Đánh giá thực nghiệm & Thống kê
+
+### Bootstrap 95% Confidence Intervals cho toàn bộ số liệu
+Toàn bộ chỉ số (Recall@k, MRR@k, Intent Accuracy) đều được tính kèm khoảng tin cậy Bootstrap 95% ($B=1000$).
+Reason: Tập test có $N=105$ câu; nếu không có khoảng tin cậy, các chênh lệch nhỏ (ví dụ 58.1% vs 59.1%) dễ bị diễn giải sai thành cải tiến vượt bậc. Mọi kết luận kỹ thuật bắt buộc dựa trên việc CI có tách rời nhau hay không.
+
+### Tách riêng đánh giá theo cấp độ Trang (Page) và cấp độ Điều (Article)
+Đánh giá retrieval phân tách độc lập Page Recall và Article Recall.
+Reason: Sinh viên có thể hỏi trúng nội dung nhưng chunk nằm ở phần mở đầu của trang chưa có tiêu đề Điều hoặc văn bản dạng scan OCR bị mất định dạng Điều. Tách riêng giúp chẩn đoán chính xác lỗi do bộ tìm kiếm hay do bước gán nhãn cấu trúc.
+
+## Phase 5b - Phân tích lỗi & Đào sâu nguyên nhân gốc rễ
+
+### Mở rộng độ sâu Retrieval đến Top-50 (Depth Ablation)
+Kiểm tra hiệu suất Hybrid Retrieval ở độ sâu $k \in \{3, 5, 20, 50\}$.
+Reason: Ở $k=5$, Page Recall đạt 59.1% [49.5%, 68.6%]. Khi mở rộng lên $k=20$, Page Recall nhảy vọt lên 80.0% [72.4%, 87.6%] và đạt 89.5% [83.8%, 95.2%] ở $k=50$. Điều này chứng minh 74.4% các câu trượt ở top-5 thực chất đã nằm trong top-50 ứng viên của retrieval, nhưng bị đẩy xuống do giới hạn cửa sổ rerank nhỏ (k=5).
+
+### Xuất dữ liệu failure_analysis.csv để phân loại lỗi có kiểm chứng
+Toàn bộ 42 trường hợp trượt Page R@5 trong chế độ Hybrid + Rerank được trích xuất thành file CSV với 11 cột, lưu trữ đầy đủ ground truth, top-5 chunks, điểm số và nhãn phân loại lỗi.
+Reason: Ngăn chặn phỏng đoán cảm tính; cung cấp dữ liệu minh bạch cho nhóm kỹ sư phân loại nguyên nhân (lexical mismatch, structural loss, scan noise).
+
+### Định lượng tỷ lệ gán nhãn Article Coverage giữa Clean Text và OCR
+Phân tích tỷ lệ chunk có trường `article` khác rỗng trên 8 tài liệu quy chế.
+Reason: Khám phá nguyên nhân gốc rễ khiến Article Recall trên tài liệu OCR chỉ đạt 22.2% (so với 35.8% ở Clean Text). Kết quả: Clean Text đạt 94.8% chunk có nhãn Điều, trong khi tài liệu Scan OCR chỉ đạt 21.15% do chữ in hoa và gạch ngang trên bản quét bị mờ, khiến regex parser không kích hoạt.
+
+## Phase 6 - Đóng gói, Tự động hóa CI/CD & Bảo mật
+
+### Multi-stage Dockerfile với Non-Root User (uitbot)
+Xây dựng Dockerfile 2 giai đoạn: Giai đoạn builder biên dịch wheels và tải CPU PyTorch; Giai đoạn runner chỉ chứa môi trường tối giản và chạy dưới tài khoản không đặc quyền `uitbot` (UID 1000).
+Reason: Giảm diện tích tấn công (attack surface), tuân thủ tiêu chuẩn bảo mật container của doanh nghiệp, đồng thời cắt giảm kích thước image từ 6GB (CUDA) xuống ~1.5GB (CPU torch).
+
+### Cố định volume cache HuggingFace tại thư mục home của non-root user
+Mount volume `hf_cache` vào `/home/uitbot/.cache/huggingface`.
+Reason: Ngăn chặn lỗi `Permission Denied` khi container chạy dưới non-root user và tránh việc phải tải lại model 2.2GB (`bge-m3`, `bge-reranker-v2-m3`) mỗi khi khởi động lại container.
+
+### Phân tách CI Pipeline: Fast Unit Tests và Integration Postgres Service
+Tách workflow GitHub Actions thành 2 job: Job 1 kiểm tra `ruff check`, `ruff format` và chạy 50 unit tests không phụ thuộc DB/LLM trong <15s; Job 2 là integration test tự động khởi chạy service container `pgvector/pgvector:pg16`.
+Reason: Đảm bảo phản hồi nhanh cho pull request mà vẫn duy trì khả năng kiểm thử tích hợp đầy đủ.
+
+### Bảo vệ 4 lớp chống DoS và Prompt Injection
+1. Giới hạn độ dài câu hỏi tối đa 1000 ký tự ở tầng Pydantic Schema và API Handler.
+2. Bộ lọc Regex phát hiện các mẫu tấn công chiếm quyền prompt (Jailbreak, DAN, Ignore instructions, Developer mode).
+3. Khử trùng ký tự điều khiển và bọc câu hỏi của người dùng trong thẻ XML `<user_query>`.
+4. Rà soát tự động git history để đảm bảo 100% không chứa API key thật.
+Reason: Bảo vệ mô hình RAG khỏi việc bị lợi dụng phát tán thông tin sai lệch hoặc làm cạn kiệt tài nguyên tính toán.
+
 
 

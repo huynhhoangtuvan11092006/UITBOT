@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+import random
 import re
 import statistics
 from collections.abc import Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 from app.retrieval.models import RetrievedChunk
@@ -61,10 +62,6 @@ def is_hit(chunk: RetrievedChunk, labels: Sequence[dict[str, Any]], level: str =
         else:
             raise ValueError(f"Unknown match level: {level}")
     return False
-
-
-import random
-from dataclasses import dataclass, field
 
 
 def bootstrap_ci(

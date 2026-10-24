@@ -12,7 +12,7 @@ langfuse==2.60.5
 pymupdf==1.25.5
 pytesseract==0.3.13
 pillow==11.2.1
-underthesea>=6.8.4
+underthesea==9.5.0
 httpx==0.28.1
 pytest==8.3.5
 ruff==0.11.6

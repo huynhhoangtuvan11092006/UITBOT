@@ -23,6 +23,8 @@ async def chat_endpoint(request: ChatRequest) -> ChatResponse:
     query = request.message.strip()
     if not query:
         raise HTTPException(status_code=400, detail="Câu hỏi không được để trống.")
+    if len(query) > 1000:
+        raise HTTPException(status_code=400, detail="Câu hỏi quá dài (tối đa 1000 ký tự).")
 
     try:
         response = rag_service.answer_query(
@@ -77,6 +79,8 @@ async def chat_stream_endpoint(request: ChatRequest, req: Request) -> StreamingR
     query = request.message.strip()
     if not query:
         raise HTTPException(status_code=400, detail="Câu hỏi không được để trống.")
+    if len(query) > 1000:
+        raise HTTPException(status_code=400, detail="Câu hỏi quá dài (tối đa 1000 ký tự).")
 
     return StreamingResponse(
         _stream_chat_generator(query, request.session_id),

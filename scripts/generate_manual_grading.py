@@ -157,10 +157,13 @@ def generate_manual_grading_csv(
             answer_text, raw_cits, _ = generate_answer(question, reranked, client=client)
             valid_cits = validate_citations(raw_cits, reranked)
             bot_answer = answer_text
-            bot_cits_str = "; ".join(
-                f"{c.source_file} (Điều {c.article or '?'}, Trang {c.page or '?'})"
-                for c in valid_cits
-            ) or "Không có trích dẫn hợp lệ"
+            bot_cits_str = (
+                "; ".join(
+                    f"{c.source_file} (Điều {c.article or '?'}, Trang {c.page or '?'})"
+                    for c in valid_cits
+                )
+                or "Không có trích dẫn hợp lệ"
+            )
 
         # 4. LLM judge scoring
         judge_res = llm_judge(
@@ -183,8 +186,8 @@ def generate_manual_grading_csv(
                 "llm_judge_score_citation": judge_res["citation_accuracy"],
                 "llm_judge_reasoning": judge_res["reasoning"],
                 "human_regulation_accuracy_1_5": "",  # Blank for human reviewer
-                "human_citation_accuracy_1_5": "",    # Blank for human reviewer
-                "human_notes": "",                    # Blank for human notes
+                "human_citation_accuracy_1_5": "",  # Blank for human reviewer
+                "human_notes": "",  # Blank for human notes
             }
         )
 

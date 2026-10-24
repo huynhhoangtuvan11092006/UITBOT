@@ -48,7 +48,7 @@ def load_cached_documents(cache_file: Path | str = "data/processed/extracted_pag
         pages_by_doc.setdefault(p["source_file"], []).append(page_obj)
 
     documents = []
-    for sf, pages in sorted(pages_by_doc.items()):
+    for _sf, pages in sorted(pages_by_doc.items()):
         text, _ = concatenate_pages(pages)
         regions = parse_structure(text)
         doc = build_document(pages, regions)
@@ -131,9 +131,7 @@ def run_chunking_ablation(
         ),
         (
             "fixed_800_150",
-            lambda d: chunk_fixed(
-                d, chunk_size=800, chunk_overlap=150, chunk_set="fixed_800_150"
-            ),
+            lambda d: chunk_fixed(d, chunk_size=800, chunk_overlap=150, chunk_set="fixed_800_150"),
         ),
         (
             "fixed_1200_200",

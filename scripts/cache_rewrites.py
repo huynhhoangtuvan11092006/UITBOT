@@ -63,7 +63,7 @@ def main():
             data = json.loads(content)
             rw = data.get("rewritten_query") or q
             return q, rw
-        except Exception as e:
+        except Exception:
             return q, q
 
     # Run with 10 threads concurrently

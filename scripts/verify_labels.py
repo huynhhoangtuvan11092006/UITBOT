@@ -78,7 +78,7 @@ def interactive_review(items: list[dict]) -> None:
             idx += 1
             continue
 
-        q_id = item.get("id", f"q_{idx+1}")
+        q_id = item.get("id", f"q_{idx + 1}")
         question = item.get("question", "")
         group = item.get("group", "")
         relevant = item.get("relevant", [])
@@ -137,9 +137,7 @@ def interactive_review(items: list[dict]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="UITBOT Golden Dataset Label Verifier CLI")
     parser.add_argument("--status", action="store_true", help="Hiển thị thống kê nhãn")
-    parser.add_argument(
-        "--auto-all", action="store_true", help="Tự động xác nhận tất cả câu hỏi"
-    )
+    parser.add_argument("--auto-all", action="store_true", help="Tự động xác nhận tất cả câu hỏi")
     args = parser.parse_args()
 
     items = load_dataset()

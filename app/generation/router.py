@@ -54,10 +54,38 @@ _OUT_OF_SCOPE_PATTERNS = re.compile(
     re.IGNORECASE,
 )
 
+_PROMPT_INJECTION_PATTERNS = re.compile(
+    r"(ignore (all )?(previous|above) instructions|system prompt|jailbreak|"
+    r"you are now (an unrestricted|dan)|bỏ qua (mọi )?(hướng dẫn|chỉ dẫn|lệnh)|"
+    r"quên (hết|tất cả) các (lệnh|quy tắc)|bạn là một ai không bị giới hạn|"
+    r"chế độ nhà phát triển|developer mode|disregard (all )?previous)",
+    re.IGNORECASE,
+)
+
+
+def _check_prompt_injection(query: str) -> RouterDecision | None:
+    """Detect prompt injection, role takeover, or jailbreak attempts."""
+    if _PROMPT_INJECTION_PATTERNS.search(query):
+        logger.warning("Prompt injection pattern detected in query: %s", query[:80])
+        return RouterDecision(
+            intent=Intent.OUT_OF_SCOPE,
+            rewritten_query="",
+            explanation="Detected prompt injection / jailbreak attempt",
+            direct_response=(
+                "Yêu cầu không hợp lệ. UITBOT chỉ hỗ trợ giải đáp quy chế, quy định học vụ "
+                "chính thức của Trường Đại học Công nghệ Thông tin (ĐHQG-HCM)."
+            ),
+        )
+    return None
+
 
 def _rule_based_fallback(query: str) -> RouterDecision:
     """Fallback classifier when LLM call is unavailable or fails."""
     normalized = query.strip()
+    injection = _check_prompt_injection(normalized)
+    if injection:
+        return injection
+
     if _GREETING_PATTERNS.match(normalized):
         return RouterDecision(
             intent=Intent.SMALL_TALK,
@@ -110,6 +138,10 @@ def route_and_rewrite(
     query_clean = query.strip()
     if not query_clean:
         return _rule_based_fallback(query_clean)
+
+    injection = _check_prompt_injection(query_clean)
+    if injection:
+        return injection
 
     api_key = settings.openai_api_key
     base_url = settings.openai_base_url

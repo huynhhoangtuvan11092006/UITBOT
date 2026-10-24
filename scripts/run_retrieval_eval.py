@@ -43,9 +43,7 @@ def load_rewrite_cache() -> dict[str, str]:
 
 def save_rewrite_cache(cache: dict[str, str]) -> None:
     REWRITE_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REWRITE_CACHE_PATH.write_text(
-        json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    REWRITE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def get_or_rewrite_query(query: str, cache: dict[str, str], client: OpenAI | None = None) -> str:

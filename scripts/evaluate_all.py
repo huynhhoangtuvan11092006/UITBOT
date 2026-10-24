@@ -17,7 +17,6 @@ from __future__ import annotations
 import json
 import logging
 import platform
-import random
 import subprocess
 import sys
 import time
@@ -53,7 +52,10 @@ def get_git_info() -> dict[str, str]:
     if info_file.exists():
         try:
             data = json.loads(info_file.read_text(encoding="utf-8"))
-            return {"commit": data.get("commit", "unknown"), "branch": data.get("branch", "unknown")}
+            return {
+                "commit": data.get("commit", "unknown"),
+                "branch": data.get("branch", "unknown"),
+            }
         except Exception:
             pass
 
@@ -118,12 +120,6 @@ def format_results_markdown(
 
     # 1. Retrieval Pipeline Table (Table 2.1)
     modes = retrieval_data.get("ablation_retrieval", [])
-    best_mode = modes[-1] if modes else {}
-    bm_name = best_mode.get("mode_name", "Rewrite + Hybrid + Rerank")
-    p_r5_best = f"{best_mode.get('page_metrics', {}).get('recall_at_5', 0.0) * 100:.1f}%"
-    p_mrr_best = f"{best_mode.get('page_metrics', {}).get('mrr_at_5', 0.0):.3f}"
-    a_r5_best = f"{best_mode.get('article_metrics', {}).get('recall_at_5', 0.0) * 100:.1f}%"
-    a_mrr_best = f"{best_mode.get('article_metrics', {}).get('mrr_at_5', 0.0):.3f}"
 
     retrieval_rows = []
     for mode in modes:
@@ -149,32 +145,47 @@ def format_results_markdown(
     depth_rows = [
         (
             3,
-            format_pct_ci(hyb_ext.get("page_recall_at_3", 0.505), n_queries, p_ci.get("recall_at_3")),
-            format_pct_ci(hyb_ext.get("article_recall_at_3", 0.238), n_queries, a_ci.get("recall_at_3")),
+            format_pct_ci(
+                hyb_ext.get("page_recall_at_3", 0.505), n_queries, p_ci.get("recall_at_3")
+            ),
+            format_pct_ci(
+                hyb_ext.get("article_recall_at_3", 0.238), n_queries, a_ci.get("recall_at_3")
+            ),
             "Top-3 cô đọng cho LLM context ngắn",
         ),
         (
             5,
-            format_pct_ci(hyb_ext.get("page_recall_at_5", 0.591), n_queries, p_ci.get("recall_at_5")),
-            format_pct_ci(hyb_ext.get("article_recall_at_5", 0.305), n_queries, a_ci.get("recall_at_5")),
+            format_pct_ci(
+                hyb_ext.get("page_recall_at_5", 0.591), n_queries, p_ci.get("recall_at_5")
+            ),
+            format_pct_ci(
+                hyb_ext.get("article_recall_at_5", 0.305), n_queries, a_ci.get("recall_at_5")
+            ),
             "Ngưỡng Top-5 mặc định của UITBOT",
         ),
         (
             20,
-            format_pct_ci(hyb_ext.get("page_recall_at_20", 0.800), n_queries, p_ci.get("recall_at_20")),
-            format_pct_ci(hyb_ext.get("article_recall_at_20", 0.429), n_queries, a_ci.get("recall_at_20")),
+            format_pct_ci(
+                hyb_ext.get("page_recall_at_20", 0.800), n_queries, p_ci.get("recall_at_20")
+            ),
+            format_pct_ci(
+                hyb_ext.get("article_recall_at_20", 0.429), n_queries, a_ci.get("recall_at_20")
+            ),
             "Ứng viên cho Cross-Encoder Reranker",
         ),
         (
             50,
-            format_pct_ci(hyb_ext.get("page_recall_at_50", 0.895), n_queries, p_ci.get("recall_at_50")),
-            format_pct_ci(hyb_ext.get("article_recall_at_50", 0.505), n_queries, a_ci.get("recall_at_50")),
+            format_pct_ci(
+                hyb_ext.get("page_recall_at_50", 0.895), n_queries, p_ci.get("recall_at_50")
+            ),
+            format_pct_ci(
+                hyb_ext.get("article_recall_at_50", 0.505), n_queries, a_ci.get("recall_at_50")
+            ),
             "Trần độ phủ tiềm năng (Retrieval Ceiling)",
         ),
     ]
     depth_table = "\n".join(
-        f"| **Top-{k}** | {p_rec} | {a_rec} | {note} |"
-        for k, p_rec, a_rec, note in depth_rows
+        f"| **Top-{k}** | {p_rec} | {a_rec} | {note} |" for k, p_rec, a_rec, note in depth_rows
     )
 
     # 3. Category Breakdown Table (Table 3.1)
@@ -254,13 +265,13 @@ def format_results_markdown(
         ta = pt["true_accepts"]
         fr = pt["false_refusals"]
         f1 = f"{pt['refusal_f1']:.3f}"
-        n_sweep = pt["true_refusals"] + pt["false_accepts"] + pt["true_accepts"] + pt["false_refusals"]
+        n_sweep = (
+            pt["true_refusals"] + pt["false_accepts"] + pt["true_accepts"] + pt["false_refusals"]
+        )
         acc = format_pct_ci(pt.get("pass_accuracy", pt.get("accuracy", 0.0)), n_sweep)
         opt_th = guardrail_data.get("evidence_gate_summary", {}).get("optimal_threshold")
         is_opt = " ⭐ (Opt)" if pt["threshold"] == opt_th else ""
-        sweep_rows.append(
-            f"| {th}{is_opt} | {tr} | {fa} | {ta} | {fr} | {f1} | {acc} |"
-        )
+        sweep_rows.append(f"| {th}{is_opt} | {tr} | {fa} | {ta} | {fr} | {f1} | {acc} |")
     sweep_table = "\n".join(sweep_rows)
 
     opt_gate = guardrail_data.get("evidence_gate_summary", {})
@@ -272,7 +283,7 @@ def format_results_markdown(
 
 > **Execution Metadata:**
 > - **Date & Time:** `{timestamp}`
-> - **Git Commit:** `{git_info['commit'][:8]}` (`{git_info['branch']}`)
+> - **Git Commit:** `{git_info["commit"][:8]}` (`{git_info["branch"]}`)
 > - **Platform:** `{platform.system()} {platform.release()} (Python {platform.python_version()})`
 > - **Evaluation Dataset:** `evaluation/golden_dataset.jsonl` ({n_queries} verified questions, 0 synthetic)
 > - **Statistical Confidence:** Non-parametric 95% Bootstrap Confidence Intervals (B = 1,000 resamples)
@@ -312,7 +323,7 @@ Hệ thống RAG cho Quy chế Đào tạo UIT (**UITBOT**) được đo lườn
 {retrieval_table}
 
 > [!NOTE]
-> - **Page Match:** Đo lường liệu trong Top-K chunk có ít nhất một chunk bao trùm trang quy chế của nhãn (dung sai $\pm 1$ trang cho bìa/mục lục scan).
+> - **Page Match:** Đo lường liệu trong Top-K chunk có ít nhất một chunk bao trùm trang quy chế của nhãn (dung sai +/- 1 trang cho bìa/mục lục scan).
 > - **Article Match:** Đo lường sự trùng khớp chính xác số Điều quy chế (chuẩn hóa dạng `điều X`).
 > - Khoảng giá trị trong ngoặc vuông `[...]` là khoảng tin cậy 95% Bootstrap không tham số ($B = 1,000$).
 
@@ -514,6 +525,7 @@ def main() -> int:
     failure_cases_count = 42
     if failure_csv.exists():
         import csv as csv_mod
+
         with failure_csv.open("r", encoding="utf-8") as f:
             reader = csv_mod.DictReader(f)
             failure_cases_count = sum(1 for _ in reader)

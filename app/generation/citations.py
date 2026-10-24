@@ -48,9 +48,7 @@ def find_matching_chunk(
     valid_page_chunks = matching_file_chunks
     if citation.page is not None:
         valid_page_chunks = [
-            c
-            for c in matching_file_chunks
-            if (c.page_start - 1 <= citation.page <= c.page_end + 1)
+            c for c in matching_file_chunks if (c.page_start - 1 <= citation.page <= c.page_end + 1)
         ]
         if not valid_page_chunks:
             return None

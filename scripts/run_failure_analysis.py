@@ -25,10 +25,7 @@ from app.retrieval.hybrid import retrieve_hybrid  # noqa: E402
 from app.retrieval.models import RetrievedChunk  # noqa: E402
 from app.retrieval.reranker import load_reranker_model  # noqa: E402
 from evaluation.metrics import (  # noqa: E402
-    bootstrap_ci,
-    compute_hits_at_k,
     compute_retrieval_metrics,
-    compute_rr_at_k,
     is_article_match,
     is_page_match,
 )
@@ -150,7 +147,7 @@ def run_phase_5b():
 
     # 4. Export failure_analysis.csv for all questions missing Page R@5 in Hybrid+Rerank
     failure_rows: list[dict[str, Any]] = []
-    for idx, (q_item, top5) in enumerate(zip(verified, reranked_top5_all, strict=True), start=1):
+    for q_item, top5 in zip(verified, reranked_top5_all, strict=True):
         q_id = q_item["id"]
         group = q_item.get("group", "")
         q_text = q_item["question"]
@@ -251,7 +248,9 @@ def run_phase_5b():
     }
 
     out_json = Path("evaluation/retrieval_extended_results.json")
-    out_json.write_text(json.dumps(extended_results, ensure_ascii=False, indent=2), encoding="utf-8")
+    out_json.write_text(
+        json.dumps(extended_results, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     logger.info("Saved extended retrieval results to %s", out_json)
     return extended_results
 

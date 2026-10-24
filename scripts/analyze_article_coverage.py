@@ -57,9 +57,7 @@ def analyze_article_coverage(
         ),
         (
             "fixed_800_150",
-            lambda d: chunk_fixed(
-                d, chunk_size=800, chunk_overlap=150, chunk_set="fixed_800_150"
-            ),
+            lambda d: chunk_fixed(d, chunk_size=800, chunk_overlap=150, chunk_set="fixed_800_150"),
         ),
         (
             "fixed_1200_200",
