@@ -82,9 +82,9 @@ docker compose exec -T app python scripts/evaluate_all.py
 | Phương pháp tìm kiếm | Tìm trúng trang (Recall@5) | Ưu tiên trang đúng lên đầu (MRR) | Tốc độ phản hồi | Đánh giá & Ứng dụng thực tế |
 |:---|:---:|:---:|:---:|:---|
 | **Dense (Vector bge-m3)** | 58.1% | 0.444 | 413ms | Tìm kiếm theo ngữ nghĩa câu hỏi |
-| **Hybrid (Dense + BM25)** | 59.1% | 0.433 | **291ms ⚡** | **Cân bằng tốt nhất:** Bắt trúng cả từ khóa viết tắt (`TOEIC`, `điểm I`) |
-| **Hybrid + Rerank** | 59.1% | **0.462 🎯** | ~5.5s | **Chính xác nhất:** Đưa đoạn văn chuẩn nhất lên vị trí ưu tiên số 1 |
-| **Rewrite + Hybrid + Rerank** | **61.9% 🏆** | 0.452 | ~12.6s | **Thông minh nhất:** Tự dịch khẩu ngữ sinh viên sang ngôn ngữ quy chế |
+| **Hybrid (Dense + BM25)** | 59.1% | 0.433 | **291ms** | **Cân bằng tốt nhất:** Bắt trúng cả từ khóa viết tắt (`TOEIC`, `điểm I`) |
+| **Hybrid + Rerank** | 59.1% | **0.462** | ~5.5s | **Chính xác nhất:** Đưa đoạn văn chuẩn nhất lên vị trí ưu tiên số 1 |
+| **Rewrite + Hybrid + Rerank** | **61.9%** | 0.452 | ~12.6s | **Thông minh nhất:** Tự dịch khẩu ngữ sinh viên sang ngôn ngữ quy chế |
 
 ### 2. Khả năng tìm kiếm chuyên sâu (Depth Ablation)
 | Số lượng đoạn văn thu hồi | Khả năng tìm trúng văn bản | Ý nghĩa thực tế |
@@ -96,9 +96,9 @@ docker compose exec -T app python scripts/evaluate_all.py
 > 💡 **Ý nghĩa**: Có đến **74.4% câu hỏi trượt ở Top-5 thực chất đã nằm trong Top-50**. Bộ tìm kiếm hoạt động rất xuất sắc, điểm thắt nút chỉ nằm ở kích thước context gửi cho LLM.
 
 ### 3. An toàn & Chống ảo giác (Guardrails Verification)
-- 🛡️ **100% Loại bỏ trích dẫn ảo**: Thuật toán độc lập bằng Python kiểm tra chéo từng Điều, Khoản, Trang — loại bỏ hoàn toàn các trích dẫn bịa đặt.
-- 🚦 **Evidence Gate tự động từ chối**: Khi tài liệu không đủ căn cứ, hệ thống tự động từ chối an toàn và hướng dẫn gửi email tới `phongdaotao@uit.edu.vn`.
-- 🧠 **Độ chính xác câu trả lời**: Đạt **95.0%** (19/20 câu kiểm thử độc lập) có câu trả lời bám sát 100% căn cứ pháp lý quy chế.
+-  **100% Loại bỏ trích dẫn ảo**: Thuật toán độc lập bằng Python kiểm tra chéo từng Điều, Khoản, Trang — loại bỏ hoàn toàn các trích dẫn bịa đặt.
+-  **Evidence Gate tự động từ chối**: Khi tài liệu không đủ căn cứ, hệ thống tự động từ chối an toàn và hướng dẫn gửi email tới `phongdaotao@uit.edu.vn`.
+-  **Độ chính xác câu trả lời**: Đạt **95.0%** (19/20 câu kiểm thử độc lập) có câu trả lời bám sát 100% căn cứ pháp lý quy chế.
 
 ---
 
