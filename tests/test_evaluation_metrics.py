@@ -93,3 +93,12 @@ def test_compute_latency_stats():
     stats = compute_latency_stats(lats)
     assert stats.mean_ms == 30.0
     assert stats.p50_ms == 30.0
+
+
+def test_bootstrap_ci():
+    from evaluation.metrics import bootstrap_ci
+    values = [1.0, 1.0, 1.0, 0.0, 0.0]  # mean = 0.6
+    low, high = bootstrap_ci(values, n_boot=500, ci=0.95, seed=42)
+    assert 0.1 <= low <= 0.6
+    assert 0.6 <= high <= 1.0
+

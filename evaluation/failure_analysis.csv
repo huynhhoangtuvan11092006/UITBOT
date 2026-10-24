@@ -1,0 +1,440 @@
+question_id,group,question,ground_truth_labels,ground_truth_text,page_hit_at_5,article_hit_at_5,top1_retrieved,top2_retrieved,top3_retrieved,top4_retrieved,top5_retrieved,error_category_suggestion,notes
+tc_003,tín chỉ,em bị cảnh báo học vụ thì kỳ sau được đăng ký tối đa và tối thiểu mấy tín chỉ vậy bot,"quy_che_dao_tao.pdf (Điều Điều 8, Trang 7)","[quy_che_dao_tao.pdf P.7]:
+Trang 7/27
+
+- Đối với sinh viên đã quá thời gian học theo thiết kế chương trình đào tạo:
+o Đối với học kỳ chính
+Học phí = min(HPHKC, HPGH + HPTCHM × TCHPHM) + HPTCHL ×
+TCHPHL + HPTCCT × TCHPCT
+o Đối với học kỳ hè
+Học phí = HPTCHM × TCHPHM + HPTCHL × TCHPHL + HPTCCT ×
+TCHPCT
+- Trong các công thức trên:
+o HPHK: học phí học kỳ, là khoản tiền sinh viên phải đóng khi có đăng ký học
+phần mới trong học k...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.877): ao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ. ...","quy_che_dao_tao.pdf (P.12-13, Điều 14, score=0.796): AN University Network tổ chức giảng dạy. Việc chuyển đổi và công nhận tín chỉ được thực hiện theo quy định tại Điều 27 của Quy chế này.  Trang 13/27  ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.324): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.9-9, Điều 7, score=0.263): ình đào tạo tối thiểu là 120 và tối đa là 132 tín chỉ đối với đào tạo chương trình cử nhân; tối thiểu 150 tín chỉ đối với chương trình đào tạo chuyên ...","quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.246): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...",,
+tc_005,tín chỉ,em lỡ đăng ký môn rồi giờ muốn rút bớt học phần thì làm sao và có được trả lại học phí ko,"quy_che_dao_tao.pdf (Điều Điều 9, Trang 8)","[quy_che_dao_tao.pdf P.8]:
+Trang 8/27
+
+(trong đó i là số học kỳ sinh viên không ĐKHP hoặc bị hủy ĐKHP). Đồng thời, sinh
+viên bị XLHV theo quy định tại Điều 16 của Quy chế này.
+(Ví dụ : CTĐT có thời gian thiết kế là 7 học kỳ, sinh viên không ĐKHP hoặc bị hủy
+ĐKHP 01 học kỳ thì thời gian sinh viên phải đóng HPHK tới hết học kỳ 8).
+Điều 5. Học kỳ, năm học
+1. Học kỳ là thời gian để sinh viên hoàn thành một số học phần của chươn...",False,False,"quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.037): viên tự ý bỏ thi sẽ nhận điểm không (0) cho học phần đó. 3. Nếu được nhận điểm I, trong thời gian tối đa là 2 học kỳ chính tiếp theo, sinh viên phải l...","quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.029): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.028): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.14-14, Điều 15, score=0.026): hí học kỳ, học lần thứ hai trở đi được coi là học lại/cải thiện. - Thời điểm thi kết thúc môn học thuộc học kỳ nào thì Trường tính điểm cho sinh viên ...","quy_che_dao_tao.pdf (P.13-14, Điều 14, score=0.025): định tại Khoản 1 Điều 14 của Quy chế này. 4. Việc đăng ký học phần cải thiện được thực hiện theo quy trình đăng ký học phần của Trường.  Trang 14/27  ...",,
+tc_007,tín chỉ,Rút học phần thì điểm môn đó trên bảng điểm sẽ hiển thị chữ gì?,"quy_che_dao_tao.pdf (Điều Điều 9, Trang 8)","[quy_che_dao_tao.pdf P.8]:
+Trang 8/27
+
+(trong đó i là số học kỳ sinh viên không ĐKHP hoặc bị hủy ĐKHP). Đồng thời, sinh
+viên bị XLHV theo quy định tại Điều 16 của Quy chế này.
+(Ví dụ : CTĐT có thời gian thiết kế là 7 học kỳ, sinh viên không ĐKHP hoặc bị hủy
+ĐKHP 01 học kỳ thì thời gian sinh viên phải đóng HPHK tới hết học kỳ 8).
+Điều 5. Học kỳ, năm học
+1. Học kỳ là thời gian để sinh viên hoàn thành một số học phần của chươn...",False,False,"quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.144): iểm cuối kỳ thay cho điểm giữa kỳ. Điều 22. Không hoàn tất học phần Trường hợp vì những lý do chính đáng không thể dự thi, kiểm tra (ốm đau, tai nạn, ...","quy_che_dao_tao.pdf (P.19-20, Điều 23, score=0.142): cầu một học phần thuộc trình độ đại học ở một CSĐT khác trong thời gian không quá 5 năm nếu muốn xin miễn học phần đó thì cần phải làm  Trang 20/27  đ...","quy_che_dao_tao.pdf (P.18-19, Điều 21, score=0.063): 6,0 Từ 50 đến cận 60 2,0 C Trung bình Không đạt 4,0 đến cận 5,0 Từ 40 đến cận 50 1,5 D+ Yếu 3,0 đến cận 4,0 Từ 30 đến cận 40 1,0 D Kém  Trang 19/27  <...","quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.040): viên tự ý bỏ thi sẽ nhận điểm không (0) cho học phần đó. 3. Nếu được nhận điểm I, trong thời gian tối đa là 2 học kỳ chính tiếp theo, sinh viên phải l...","quy_che_dao_tao.pdf (P.18-18, Điều 20, score=0.028): của Trường. Khoa, bộ môn, giảng viên không tổ chức thi ngoài các đợt đã thông báo. Hiệu trưởng quy định thời gian học, ôn thi và thi cho từng học kỳ. ...",,
+tc_008,tín chỉ,Điều kiện để sinh viên được phép đăng ký học vượt là gì?,"quy_che_dao_tao.pdf (Điều Điều 8, Trang 7)","[quy_che_dao_tao.pdf P.7]:
+Trang 7/27
+
+- Đối với sinh viên đã quá thời gian học theo thiết kế chương trình đào tạo:
+o Đối với học kỳ chính
+Học phí = min(HPHKC, HPGH + HPTCHM × TCHPHM) + HPTCHL ×
+TCHPHL + HPTCCT × TCHPCT
+o Đối với học kỳ hè
+Học phí = HPTCHM × TCHPHM + HPTCHL × TCHPHL + HPTCCT ×
+TCHPCT
+- Trong các công thức trên:
+o HPHK: học phí học kỳ, là khoản tiền sinh viên phải đóng khi có đăng ký học
+phần mới trong học k...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.986): ao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ. ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.965): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.657): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...","quy_che_dao_tao.pdf (P.16-16, Điều 18, score=0.612): ác biệt trong hình thức đào tạo giữa hai chương trình đào tạo. c) Đã hoàn thành năm học đầu tiên của chương trình đào tạo thứ nhất, trước học kỳ cuối ...","quy_che_dao_tao.pdf (P.16-16, Điều 18, score=0.312): ét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác. ...",,
+tc_009,tín chỉ,Sinh viên có được đăng ký học cải thiện điểm đối với các môn đã đạt không?,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","[quy_che_dao_tao.pdf P.9]:
+Trang 9/27
+
+c) Được thiết kế tích hợp thông qua phương pháp tiếp cận hệ thống đối với việc giảng
+dạy kỹ năng, phẩm chất cá nhân, nghề nghiệp kết hợp với kiến thức nền tảng và kiến thức
+chuyên môn.
+d) Xây dựng kế hoạch và thực hiện các điều kiện đảm bảo chất lượng giáo dục đối với
+chương trình đào tạo đang triển khai.
+đ) Định kỳ sau một khóa đào tạo, thực hiện rà soát chỉnh sửa, bổ sung chương trìn...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.994): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.991): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.967): ao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ. ...","quy_che_dao_tao.pdf (P.13-14, Điều 14, score=0.943): định tại Khoản 1 Điều 14 của Quy chế này. 4. Việc đăng ký học phần cải thiện được thực hiện theo quy trình đăng ký học phần của Trường.  Trang 14/27  ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.845): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...",,
+tc_010,tín chỉ,học cải thiện điểm thì điểm cũ có bị xóa không hay lấy điểm nào cao hơn,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","[quy_che_dao_tao.pdf P.9]:
+Trang 9/27
+
+c) Được thiết kế tích hợp thông qua phương pháp tiếp cận hệ thống đối với việc giảng
+dạy kỹ năng, phẩm chất cá nhân, nghề nghiệp kết hợp với kiến thức nền tảng và kiến thức
+chuyên môn.
+d) Xây dựng kế hoạch và thực hiện các điều kiện đảm bảo chất lượng giáo dục đối với
+chương trình đào tạo đang triển khai.
+đ) Định kỳ sau một khóa đào tạo, thực hiện rà soát chỉnh sửa, bổ sung chương trìn...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.513): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.211): t quả cao nhất trong các lần học được chọn để tính vào ĐTBC, ĐTBCTL. Điểm của tất cả các lần học được lưu đầy đủ trong kết quả học tập của sinh viên. ...","quy_che_dao_tao.pdf (P.20-20, Điều 23, score=0.101): phân biệt với loại điểm mà sinh viên tích lũy được bằng cách thi. - Trong trường hợp sinh viên tham gia các kỳ thi quốc gia, quốc tế do Trường cử đi: ...","quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.079): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.072): ao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ. ...",,
+tc_011,tín chỉ,Nếu bị rớt môn bắt buộc thì sinh viên phải làm gì?,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","[quy_che_dao_tao.pdf P.9]:
+Trang 9/27
+
+c) Được thiết kế tích hợp thông qua phương pháp tiếp cận hệ thống đối với việc giảng
+dạy kỹ năng, phẩm chất cá nhân, nghề nghiệp kết hợp với kiến thức nền tảng và kiến thức
+chuyên môn.
+d) Xây dựng kế hoạch và thực hiện các điều kiện đảm bảo chất lượng giáo dục đối với
+chương trình đào tạo đang triển khai.
+đ) Định kỳ sau một khóa đào tạo, thực hiện rà soát chỉnh sửa, bổ sung chương trìn...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.706): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.558): viên tự ý bỏ thi sẽ nhận điểm không (0) cho học phần đó. 3. Nếu được nhận điểm I, trong thời gian tối đa là 2 học kỳ chính tiếp theo, sinh viên phải l...","quy_che_dao_tao.pdf (P.24-24, Điều 31, score=0.392): ập vào cuối học kỳ đó theo kế hoạch của khoa/bộ môn quản lý ngành đào tạo. Nếu sinh viên không báo cáo vào đúng đợt báo cáo của học kỳ đã đăng ký thì ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.133): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.9-9, Điều 13, score=0.125): tài liệu bị cấm sử dụng, phương tiện thông tin liên lạc,…; f) Nếu cần hỏi CBCT điều gì phải hỏi công khai. Phải giữ gìn trật tự, im lặng trong phòng t...",,
+tc_012,tín chỉ,Nếu bị điểm F môn tự chọn thì có bắt buộc phải học lại đúng môn đó không?,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","[quy_che_dao_tao.pdf P.9]:
+Trang 9/27
+
+c) Được thiết kế tích hợp thông qua phương pháp tiếp cận hệ thống đối với việc giảng
+dạy kỹ năng, phẩm chất cá nhân, nghề nghiệp kết hợp với kiến thức nền tảng và kiến thức
+chuyên môn.
+d) Xây dựng kế hoạch và thực hiện các điều kiện đảm bảo chất lượng giáo dục đối với
+chương trình đào tạo đang triển khai.
+đ) Định kỳ sau một khóa đào tạo, thực hiện rà soát chỉnh sửa, bổ sung chương trìn...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.425): ký. Trong trường hợp đặc biệt sinh viên muốn đăng ký vượt quá số tín chỉ tối đa hoặc ít hơn số tín chỉ tối thiểu phải được sự đồng ý của Hiệu trưởng. ...","quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.131): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","quy_che_dao_tao.pdf (P.4-5, Điều 3, score=0.027): hành có sự hướng dẫn của giảng viên với thời lượng 09 tiết/tín chỉ thực hành, không nhất thiết phải sử dụng phòng thực hành chuyên dụng.  Trang 5/27  ...","quy_che_dao_tao.pdf (P.18-19, Điều 21, score=0.023): 6,0 Từ 50 đến cận 60 2,0 C Trung bình Không đạt 4,0 đến cận 5,0 Từ 40 đến cận 50 1,5 D+ Yếu 3,0 đến cận 4,0 Từ 30 đến cận 40 1,0 D Kém  Trang 19/27  <...","quy_che_dao_tao.pdf (P.24-24, Điều 31, score=0.017): ập vào cuối học kỳ đó theo kế hoạch của khoa/bộ môn quản lý ngành đào tạo. Nếu sinh viên không báo cáo vào đúng đợt báo cáo của học kỳ đã đăng ký thì ...",,
+tc_019,tín chỉ,Quy định về việc đăng ký học thêm môn học ngoài chương trình đào tạo của ngành?,"quy_che_dao_tao.pdf (Điều Điều 8, Trang 8)","[quy_che_dao_tao.pdf P.8]:
+Trang 8/27
+
+(trong đó i là số học kỳ sinh viên không ĐKHP hoặc bị hủy ĐKHP). Đồng thời, sinh
+viên bị XLHV theo quy định tại Điều 16 của Quy chế này.
+(Ví dụ : CTĐT có thời gian thiết kế là 7 học kỳ, sinh viên không ĐKHP hoặc bị hủy
+ĐKHP 01 học kỳ thì thời gian sinh viên phải đóng HPHK tới hết học kỳ 8).
+Điều 5. Học kỳ, năm học
+1. Học kỳ là thời gian để sinh viên hoàn thành một số học phần của chươn...",False,False,"quy_che_dao_tao.pdf (P.13-13, Điều 14, score=0.843): ao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ. ...","quy_che_dao_tao.pdf (P.16-16, Điều 18, score=0.837): ét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác. ...","1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf (P.4-5, Điều 9, score=0.808): . Thời gian tối đa được phép học đối với sinh viên học song ngành là thời gian tối đa quy định cho chương trình đào tạo ngành thứ nhất. & £#®x x®'¿.  ...","quy_che_dao_tao.pdf (P.13-14, Điều 14, score=0.799): định tại Khoản 1 Điều 14 của Quy chế này. 4. Việc đăng ký học phần cải thiện được thực hiện theo quy trình đăng ký học phần của Trường.  Trang 14/27  ...","quy_che_dao_tao.pdf (P.16-17, Điều 19, score=0.726): g chương trình thứ nhất. 5. Sinh viên chỉ được xét tốt nghiệp chương trình thứ hai nếu đủ điều kiện tốt nghiệp ở chương trình thứ nhất.  Trang 17/27  ...",,
+tc_020,tín chỉ,Đăng ký trễ hạn môn học thì sinh viên phải xử lý thế nào theo quy định học vụ?,"28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf (Điều ?, Trang 3)",Chưa có đoạn văn trong cache.,False,False,"quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.855): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...","quy_che_dao_tao.pdf (P.7-8, Điều 4, score=0.597): ĐKHP nhưng đóng HPHK trễ hạn) thì sinh viên không phải đóng HPHK của học kỳ đó, tuy nhiên sinh viên phải đóng HPHK tới hết học kỳ n + i  Trang 8/27  (...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.562): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.12-13, Điều 16, score=0.555): heo hình thức trực tuyến: không phân công chấm thi, đơn vị quản lý môn học tổng hợp điểm và nhập điểm; điểm được ghi nhận tại thời điểm báo cáo.  13  ...","quy_che_dao_tao.pdf (P.11-11, Điều 10, score=0.532): - Sinh viên dự thính đóng học phí theo mức riêng, không được hưởng chính sách dành cho sinh viên chính quy và không được cấp bằng tốt nghiệp đại học. ...",,
+hv_009,học vụ,Thời gian đào tạo tối đa cho phép để hoàn thành khóa học đại học tại UIT là mấy năm?,"quy_che_dao_tao.pdf (Điều Điều 2, Trang 4)","[quy_che_dao_tao.pdf P.4]:
+Trang 4/27
+
+CHƯƠNG 1. QUY ĐỊNH CHUNG
+Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
+1. Quy chế này quy định những điều chung nhất về đào tạo đại học theo hình thức chính
+quy (gọi tắt là hệ đại học chính quy) của Trường Đại học Công nghệ Thông tin thuộc
+ĐHQG-HCM (gọi tắt là Trường).
+2. Quy chế này áp dụng đối với các đơn vị, cá nhân liên quan trong đào tạo hệ đại học
+chính quy.
+3. Quy định đào tạo...",False,False,"650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf (P.3-4, Điều 3, score=0.809): hội. Điều 3. Thời gian đào tạo | 1. Thời gian đào tạo chính thức của chương trình liên thông trình độ ĐH-ThS từ 4,5 đến 5,5 năm. Ấ/ é /09Axv222sxa®,  ...","650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf (P.3-3, Điều 3, score=0.355): . 3. Quy định này không áp dụng đối với chương trình đào tạo trình độ đại học, thạc sĩ liên kết trong nước và nước ngoài. Điều 2. Mục tiêu đào tạo 1. ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.339): từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp. b. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học ...","quy_che_dao_tao.pdf (P.8-8, Điều 7, score=0.297): i với văn bằng 2; từ 1,5 năm đến 2,5 năm học đối với liên thông. b) Thời gian đào tạo văn bằng 1, liên thông, văn bằng 2 được xác định trên cơ sở học ...","quy_che_dao_tao.pdf (P.8-8, Điều 5, score=0.240): n thực học và 1 tuần thi. Căn cứ vào tình hình thực tế mỗi năm, kế hoạch giảng dạy của học kỳ có thể được điều chỉnh theo quyết định của Hiệu trưởng. ...",,
+hv_010,học vụ,Sinh viên muốn chuyển ngành học trong trường cần đáp ứng những điều kiện gì?,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","[quy_che_dao_tao.pdf P.14]:
+Trang 14/27
+
+5. Đăng ký học các môn ngoại ngữ:
+- Các lớp học ngoại ngữ nằm trong chương trình đào tạo cho sinh viên chính quy được
+mở với thời khóa biểu riêng, linh động theo nhu cầu của sinh viên. Sinh viên được tự
+do đăng ký học các lớp ngoại ngữ theo điều kiện môn tiên quyết và không trùng giờ
+học với các môn học chính khóa mà sinh viên đang học trên hệ thống của Trường.
+- Trong học kỳ hè sinh ...",False,False,"quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.993): oa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đến) và Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đi). ...","quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.991): đủ thời gian học tập theo quy định tại Điều 6 của Quy chế này; - Sinh viên đạt điều kiện trúng tuyển của chương trình, ngành đào tạo cùng khóa tuyển s...","quy_che_dao_tao.pdf (P.16-17, Điều 19, score=0.984): g chương trình thứ nhất. 5. Sinh viên chỉ được xét tốt nghiệp chương trình thứ hai nếu đủ điều kiện tốt nghiệp ở chương trình thứ nhất.  Trang 17/27  ...","quy_che_dao_tao.pdf (P.17-18, Điều 20, score=0.694): ới sinh viên chuyển ngành/chương trình đào tạo/trường là thời gian tối đa hoàn thành khóa học được quy định tại Điều 6 của Quy chế này.  Trang 18/27  ...","quy_che_dao_tao.pdf (P.11-11, Điều 10, score=0.629): - Sinh viên dự thính đóng học phí theo mức riêng, không được hưởng chính sách dành cho sinh viên chính quy và không được cấp bằng tốt nghiệp đại học. ...",,
+hv_011,học vụ,Sinh viên năm thứ mấy thì không được phép chuyển ngành học nữa?,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","[quy_che_dao_tao.pdf P.14]:
+Trang 14/27
+
+5. Đăng ký học các môn ngoại ngữ:
+- Các lớp học ngoại ngữ nằm trong chương trình đào tạo cho sinh viên chính quy được
+mở với thời khóa biểu riêng, linh động theo nhu cầu của sinh viên. Sinh viên được tự
+do đăng ký học các lớp ngoại ngữ theo điều kiện môn tiên quyết và không trùng giờ
+học với các môn học chính khóa mà sinh viên đang học trên hệ thống của Trường.
+- Trong học kỳ hè sinh ...",False,False,"quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.380): oa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đến) và Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đi). ...","quy_che_dao_tao.pdf (P.16-17, Điều 19, score=0.331): g chương trình thứ nhất. 5. Sinh viên chỉ được xét tốt nghiệp chương trình thứ hai nếu đủ điều kiện tốt nghiệp ở chương trình thứ nhất.  Trang 17/27  ...","quy_che_dao_tao.pdf (P.11-11, Điều 10, score=0.224): - Sinh viên dự thính đóng học phí theo mức riêng, không được hưởng chính sách dành cho sinh viên chính quy và không được cấp bằng tốt nghiệp đại học. ...","quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.187): đủ thời gian học tập theo quy định tại Điều 6 của Quy chế này; - Sinh viên đạt điều kiện trúng tuyển của chương trình, ngành đào tạo cùng khóa tuyển s...","quy_che_dao_tao.pdf (P.17-18, Điều 19, score=0.129): hép học đối với sinh viên chuyển ngành/chương trình đào tạo/trường là thời gian tối đa hoàn thành khóa học được quy định tại Điều 6 của Quy chế này.  ...",,
+hv_013,học vụ,Điều kiện để sinh viên được chuyển từ trường khác đến UIT học tập?,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","[quy_che_dao_tao.pdf P.14]:
+Trang 14/27
+
+5. Đăng ký học các môn ngoại ngữ:
+- Các lớp học ngoại ngữ nằm trong chương trình đào tạo cho sinh viên chính quy được
+mở với thời khóa biểu riêng, linh động theo nhu cầu của sinh viên. Sinh viên được tự
+do đăng ký học các lớp ngoại ngữ theo điều kiện môn tiên quyết và không trùng giờ
+học với các môn học chính khóa mà sinh viên đang học trên hệ thống của Trường.
+- Trong học kỳ hè sinh ...",False,False,"quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.695): đủ thời gian học tập theo quy định tại Điều 6 của Quy chế này; - Sinh viên đạt điều kiện trúng tuyển của chương trình, ngành đào tạo cùng khóa tuyển s...","quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.655): oa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đến) và Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đi). ...","quy_che_dao_tao.pdf (P.16-17, Điều 19, score=0.310): g chương trình thứ nhất. 5. Sinh viên chỉ được xét tốt nghiệp chương trình thứ hai nếu đủ điều kiện tốt nghiệp ở chương trình thứ nhất.  Trang 17/27  ...","quy_che_dao_tao.pdf (P.1-2, Điều 18, score=0.144): ........... 16 ĐẠI HỌC QUỐC GIA TP.HCM TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do – Hạnh phúc  Trang 2/27  ...","quy_che_dao_tao.pdf (P.21-23, Điều 26, score=0.058): ào tạo chính quy của các cơ sở đào tạo ngoài trường được công nhận và chuyển đổi không vượt quá 50% tổng số tín chỉ chương trình đào tạo của trường.  ...",,
+hv_021,học vụ,Quy trình nộp đơn xin cấp giấy xác nhận sinh viên tại UIT thực hiện qua kênh nào?,"28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf (Điều ?, Trang 4)",Chưa có đoạn văn trong cache.,False,False,"159-qd-dhcntt_05-03-2024_ban_hanh_quy_dinh_kltn.pdf (P.11-12, Điều 18, score=0.069): tốt nghiệp 3.1 Lưu đồ quy trình - t: ngày bảo vệ KLTN  3.2 Diễn giải các bước của quy trình Bắt đầu quy trình Bước 1: Sinh viên nộp báo cáo KLTN  12  ...","159-qd-dhcntt_05-03-2024_ban_hanh_quy_dinh_kltn.pdf (P.12-12, Điều 18, score=0.058): g được đặt mật khẩu khóa file). 3. Nhập tóm tắt báo cáo KLTN. 4. Nhập danh sách các từ khóa liên quan đến nội dung KLTN bằng tiếng Việt và tiếng Anh. ...","quy_che_dao_tao.pdf (P.23-24, Điều 30, score=0.023): p. 2. Hộp thư điện tử (email) được Trường cung cấp cho từng sinh viên vào thời điểm nhập học là kênh giao tiếp chính thức giữa Trường với sinh viên.  ...","quy_che_dao_tao.pdf (P.23-23, Điều 30, score=0.020): ng thông tin điện tử để công bố công khai chuẩn đầu ra, nội dung chương trình đào tạo, điều kiện đảm bảo chất lượng đào tạo tương ứng với quy mô theo ...","quy_che_dao_tao.pdf (P.19-20, Điều 23, score=0.012): cầu một học phần thuộc trình độ đại học ở một CSĐT khác trong thời gian không quá 5 năm nếu muốn xin miễn học phần đó thì cần phải làm  Trang 20/27  đ...",,
+hv_022,học vụ,Thời gian giải quyết các đơn từ học vụ thông thường của sinh viên là mấy ngày làm việc?,"28_qd-dhcntt_10-01-2023_quy_dinh_cong_tac_hoc_vu.pdf (Điều ?, Trang 5)",Chưa có đoạn văn trong cache.,False,False,"quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.116): iểm cuối kỳ thay cho điểm giữa kỳ. Điều 22. Không hoàn tất học phần Trường hợp vì những lý do chính đáng không thể dự thi, kiểm tra (ốm đau, tai nạn, ...","quy_che_dao_tao.pdf (P.6-6, Điều 4, score=0.038): ần lý thuyết hoặc thực hành, thí nghiệm: để tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị cá nhân (tự học) và giảng viên phải ...","quy_che_dao_tao.pdf (P.11-12, Điều 12, score=0.034): không quá 01 năm. Đối với trường hợp được điều động vào các lực lượng vũ trang thì thời gian bảo lưu kết quả trúng tuyển bằng với thời  Trang 12/27  g...","1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf (P.4-4, Không rõ Điều, score=0.026): đăng ký đào tạo song ngành giữa các CSĐT; b) Thủ trưởng CSĐT phê duyệt về nội dung và phương thức tổ chức đào tạo song ngành trong cùng một CSĐT. 3. Q...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.025): từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp. b. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học ...",,
+td_014,thi-điểm,Sinh viên mang điện thoại vào phòng thi dù tắt nguồn thì bị xử lý kỷ luật thế nào?,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 17, Trang 11)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.11]:
+11
+
+2. Sơ đồ tóm tắt
+
+3. Nội dung quy trình
+Bước
+Quy trình
+Mô tả chi tiết công việc
+Thời
+hạn
+hoàn
+thành
+(ngày)
+Đơn vị
+thực hiện
+Đơn vị
+phối
+hợp
+Biểu
+mẫu
+1
+Xuất lịch
+thi
+Căn cứ vào kế hoạch thi,
+cùng thời điểm xuất danh
+sách môn thi Lý thuyết dự
+kiến, hệ thống xuất lịch thi
+Đồ án, Vấn đáp dựa trên
+thông tin môn học . Lịch thi
+dự kiến theo lịch thi mẫu,
+bao gồm tất cả các môn thi
+có hình thức cuối k...",False,False,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.257): đưa bài giải từ ngoài vào phòng thi trong lúc đang thi. c) Cố tình làm sai lệch điểm trên bài thi hoặc trong bảng điểm. d) Đánh tráo bài thi của SV. 5...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.21-21, Điều 23, score=0.199): vẫn tiếp tục vi phạm; + Trao đổi bài làm hoặc giấy nháp cho bạn; + Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như n...","809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.9-10, Không rõ Điều, score=0.193): hoặc tổng thời gian mất kết nối 10 phút. c) CBCT không thê nghe rõ âm thanh của thí sinh khi được yêu cầu hoặc không nhìn rõ hình ảnh của thí sinh.  9...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.159): đợt thi. b) CBCT để cho SV tự do trao đổi khi làm bài, sử dụng tài liệu bị cấm sử dụng hoặc sử dụng các phương tiện thông tin liên lạc tại phòng thi. ...","809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.10-10, Không rõ Điều, score=0.081): sinh vi phạm 1. Mức độ sai phạm và khung xử lý kỷ luật đối với thí sinh được thẻ hiện cụ thẻ trong quy định học vụ và quy định khảo thí của CSĐT. 2. T...",,
+td_015,thi-điểm,Sinh viên nhờ người khác thi hộ hoặc đi thi hộ người khác thì bị kỷ luật gì?,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 17, Trang 12)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.12]:
+12
+
+3
+Kiểm tra,
+import lịch
+thi vào hệ
+thống
+– P.ĐTĐH, VPĐB kiểm tra
+và import lịch thi
+t2-7
+P.ĐTĐH,
+VPĐB
+
+Mẫu lịch
+thi (THIM09)
+4
+Đổ danh
+sách thí
+sinh vào
+phòng thi
+– P.ĐTĐH, VPĐB thực
+hiện đổ danh sách SV vào
+các phòng thi
+t2-7
+P.ĐTĐH,
+VPĐB
+
+5
+Thông báo
+lịch thi
+– P.ĐTĐH, VPĐB thông
+báo thông tin đến SV thông
+qua các kênh hiện có
+t2-7
+P.ĐTĐH,
+VPĐB
+
+CHƯƠNG III
+CHẤM THI VÀ CÔNG BỐ ĐIỂM
+Điều 16. C...",False,False,"quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.991): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.984): p sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.835): đưa bài giải từ ngoài vào phòng thi trong lúc đang thi. c) Cố tình làm sai lệch điểm trên bài thi hoặc trong bảng điểm. d) Đánh tráo bài thi của SV. 5...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.21-21, Điều 23, score=0.192): vẫn tiếp tục vi phạm; + Trao đổi bài làm hoặc giấy nháp cho bạn; + Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như n...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.171): đợt thi. b) CBCT để cho SV tự do trao đổi khi làm bài, sử dụng tài liệu bị cấm sử dụng hoặc sử dụng các phương tiện thông tin liên lạc tại phòng thi. ...",,
+td_016,thi-điểm,Thời hạn sinh viên được nộp đơn phúc khảo bài thi kết thúc học phần là bao lâu?,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 15, Trang 10)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.10]:
+10
+
+Điều 14. Quy trình tổ chức thi (đối với hình thức tự luận, trắc nghiệm)
+1. Đầu vào, đầu ra, thời gian:
+Đầu vào: Lịch thi, danh sách CBCT, túi đề thi, sổ theo dõi bàn giao đề thi và bài thi.
+Đầu ra: Túi bài thi, sổ theo dõi bàn giao đề thi và bài thi có thông tin bàn giao, danh sách
+CBCT cập nhật (khi có sự thay đổi).
+Thời gian: Quy trình diễn ra trong ngày thi.
+2. Sơ đồ tóm tắt
+
+Điều 15. Quy t...",False,False,"quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.878): iểm cuối kỳ thay cho điểm giữa kỳ. Điều 22. Không hoàn tất học phần Trường hợp vì những lý do chính đáng không thể dự thi, kiểm tra (ốm đau, tai nạn, ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-16, Điều 19, score=0.704): ên bài thi với điểm được nhập vào hệ thống. t+60 P.ĐTĐH/ VPĐB  7 Lưu trữ – Lưu trữ bản chính bảng điểm thi và các hồ sơ liên quan. t+60 P.ĐTĐH/ VPĐB  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-17, Điều 20, score=0.650): . Điều 20. Quy trình phúc khảo 1. Đầu vào, đầu ra, thời gian: Đầu vào: Danh sách chấm phúc khảo Đầu ra: Danh sách chấm phúc khảo (có điểm phúc khảo)  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.18-19, Điều 21, score=0.327): hông báo kết quả phúc khảo. t+20 P.ĐTĐH / VPĐB  5 Lưu trữ hồ sơ phúc khảo – Lưu trữ hồ sơ phúc khảo vào bộ hồ sơ thi của đợt thi. t+30 P.ĐTĐH / VPĐB  ...","quy_che_dao_tao.pdf (P.17-18, Điều 20, score=0.298): ới sinh viên chuyển ngành/chương trình đào tạo/trường là thời gian tối đa hoàn thành khóa học được quy định tại Điều 6 của Quy chế này.  Trang 18/27  ...",,
+td_017,thi-điểm,Sau bao nhiêu ngày kể từ khi hết hạn nộp đơn phúc khảo thì trường công bố điểm phúc khảo?,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 15, Trang 10)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.10]:
+10
+
+Điều 14. Quy trình tổ chức thi (đối với hình thức tự luận, trắc nghiệm)
+1. Đầu vào, đầu ra, thời gian:
+Đầu vào: Lịch thi, danh sách CBCT, túi đề thi, sổ theo dõi bàn giao đề thi và bài thi.
+Đầu ra: Túi bài thi, sổ theo dõi bàn giao đề thi và bài thi có thông tin bàn giao, danh sách
+CBCT cập nhật (khi có sự thay đổi).
+Thời gian: Quy trình diễn ra trong ngày thi.
+2. Sơ đồ tóm tắt
+
+Điều 15. Quy t...",False,False,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-16, Điều 19, score=0.832): ên bài thi với điểm được nhập vào hệ thống. t+60 P.ĐTĐH/ VPĐB  7 Lưu trữ – Lưu trữ bản chính bảng điểm thi và các hồ sơ liên quan. t+60 P.ĐTĐH/ VPĐB  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-17, Điều 20, score=0.534): . Điều 20. Quy trình phúc khảo 1. Đầu vào, đầu ra, thời gian: Đầu vào: Danh sách chấm phúc khảo Đầu ra: Danh sách chấm phúc khảo (có điểm phúc khảo)  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.17-18, Điều 20, score=0.209): trên hệ thống và gửi cho đơn vị tổ chức thi. t+7 P.ĐTĐH / VPĐB Khoa – Danh sách phúc khảo điểm  K H O A 1. Thông báo cho sinh viên đăng ký phúc khảo  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.18-19, Điều 21, score=0.121): hông báo kết quả phúc khảo. t+20 P.ĐTĐH / VPĐB  5 Lưu trữ hồ sơ phúc khảo – Lưu trữ hồ sơ phúc khảo vào bộ hồ sơ thi của đợt thi. t+30 P.ĐTĐH / VPĐB  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-16, Điều 20, score=0.100): ng thời hạn nhận đơn phúc khảo. 6. Khoa chuyển bài thi và hồ sơ thi về P.ĐTĐH để lưu trữ. Điều 20. Quy trình phúc khảo 1. Đầu vào, đầu ra, thời gian: ...",,
+td_020,thi-điểm,Thi trực tuyến bị rớt mạng hoặc mất kết nối thì sinh viên phải xử lý thế nào?,"809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (Điều Điều 12, Trang 6)","[809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf P.6]:
+5 hiện hành của đơn vị tô chức, đảm bảo thực hiện bảo quản và lưu trữ hồ sơ, đữ liệu liên quan trong suốt khóa đào tạo theo quy định của Luật Lưu trữ và các văn bản hướng dẫn thi hành. Điều 10. Kế hoạch tổ chức thi 1. Căn cứ vào chương trình đào tạo, điều kiện thực tế và mục tiêu đánh giá kiến thức người học, CSĐT sẽ quyết định hình thức thi trực tuyến. 2. Đơn vị tô chức thi theo hình thức trực tu...",False,False,"809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.9-10, Không rõ Điều, score=0.375): hoặc tổng thời gian mất kết nối 10 phút. c) CBCT không thê nghe rõ âm thanh của thí sinh khi được yêu cầu hoặc không nhìn rõ hình ảnh của thí sinh.  9...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.194): đưa bài giải từ ngoài vào phòng thi trong lúc đang thi. c) Cố tình làm sai lệch điểm trên bài thi hoặc trong bảng điểm. d) Đánh tráo bài thi của SV. 5...","809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.3-3, Không rõ Điều, score=0.171): à khu vực làm việc có thiết bị dành cho cán bộ điều hành thi, CBCT đáp ứng yêu cầu tại quy định này bảo đảm gọn gàng. ngăn nắp. không có tiếng ôn. §. ...","809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.9-9, Không rõ Điều, score=0.162): vị/ bộ phận tô chức thi gửi lịch thi cho cán bộ tham gia phối hợp tổ chức thi, CBCT, giám sát thi theo quy định hiện hành của đơn vị tô chức thi. 2. L...","809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf (P.9-9, Không rõ Điều, score=0.160): a) Thí sinh không có thẻ sinh viên/thẻ học viên hoặc căn cước công dân hoặc hộ chiếu hoặc có nhưng không đảm bảo đầy đủ nội dung thông tin trên thẻ. b...",,
+tn_001,tốt nghiệp,Điều kiện để sinh viên được công nhận tốt nghiệp đại học tại UIT gồm những gì?,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","[quy_che_dao_tao.pdf P.22]:
+Trang 22/27
+
+6. Khi sinh viên được chuyển từ chương trình chính quy của Trường sang chương trình đào
+tạo từ xa của Trường thì được công nhận chuyển đổi tối đa số tín chỉ theo nguyên tắc tại
+Khoản 3 của điều này.
+Điều 27. Cấp bảng điểm
+1. Trong quá trình học tập, sinh viên có thể đề nghị Trường cấp bảng điểm. Sinh viên thực
+hiện theo hướng dẫn của P.ĐTĐH.
+2. Sau khi tốt nghiệp, sinh viên được cấp m...",False,False,"quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.934): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.651): c quốc phòng-An ninh. - Đạt chuẩn ngoại ngữ xét tốt nghiệp. - Đạt điểm rèn luyện tích lũy tối thiểu là 50 điểm. - Đã hoàn trả sách mượn cho Thư viện. ...","quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.510): và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  Trang 26/27  3...","quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.292): n cứ biên bản và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.290): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...",,
+tn_002,tốt nghiệp,Điểm trung bình tích lũy toàn khóa tối thiểu là bao nhiêu để được xét tốt nghiệp?,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","[quy_che_dao_tao.pdf P.22]:
+Trang 22/27
+
+6. Khi sinh viên được chuyển từ chương trình chính quy của Trường sang chương trình đào
+tạo từ xa của Trường thì được công nhận chuyển đổi tối đa số tín chỉ theo nguyên tắc tại
+Khoản 3 của điều này.
+Điều 27. Cấp bảng điểm
+1. Trong quá trình học tập, sinh viên có thể đề nghị Trường cấp bảng điểm. Sinh viên thực
+hiện theo hướng dẫn của P.ĐTĐH.
+2. Sau khi tốt nghiệp, sinh viên được cấp m...",False,False,"quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.934): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.841): c quốc phòng-An ninh. - Đạt chuẩn ngoại ngữ xét tốt nghiệp. - Đạt điểm rèn luyện tích lũy tối thiểu là 50 điểm. - Đã hoàn trả sách mượn cho Thư viện. ...","quy_che_dao_tao.pdf (P.20-20, Điều 24, score=0.827): tích lũy (ĐTBCTL) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số t...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.389): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf (P.5-6, Điều 3, score=0.250): u đào tạo trình độ thạc sĩ của ngành tương ứng. Cơ sở giáo dục đại học quy định về thời điểm tính chỉ tiêu đảm bảo tuân thủ theo quy định hiện hành.  ...",,
+tn_003,tốt nghiệp,Sinh viên đang bị truy cứu trách nhiệm hình sự có được xét tốt nghiệp không?,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","[quy_che_dao_tao.pdf P.22]:
+Trang 22/27
+
+6. Khi sinh viên được chuyển từ chương trình chính quy của Trường sang chương trình đào
+tạo từ xa của Trường thì được công nhận chuyển đổi tối đa số tín chỉ theo nguyên tắc tại
+Khoản 3 của điều này.
+Điều 27. Cấp bảng điểm
+1. Trong quá trình học tập, sinh viên có thể đề nghị Trường cấp bảng điểm. Sinh viên thực
+hiện theo hướng dẫn của P.ĐTĐH.
+2. Sau khi tốt nghiệp, sinh viên được cấp m...",False,False,"quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.969): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.16-17, Điều 18, score=0.059): đương có trong chương trình thứ nhất. 5. Sinh viên chỉ được xét tốt nghiệp chương trình thứ hai nếu đủ điều kiện tốt nghiệp ở chương trình thứ nhất.  ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.035): từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp. b. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.032): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...","quy_che_dao_tao.pdf (P.11-11, Điều 10, score=0.027): - Sinh viên dự thính đóng học phí theo mức riêng, không được hưởng chính sách dành cho sinh viên chính quy và không được cấp bằng tốt nghiệp đại học. ...",,
+tn_004,tốt nghiệp,Các hạng xếp loại tốt nghiệp đại học gồm những mức nào?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.18-18, Điều 21, score=0.361): ứng Loại Thang điểm 10 Thang điểm 100 Điểm 4 Điểm chữ Xếp loại Đạt 9,0 đến 10,0 Từ 90 đến 100 4,0 A+ Xuất sắc 8,0 đến cận 9,0 Từ 80 đến cận 90 3,5 A G...","quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.151): và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  Trang 26/27  3...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.20-20, Không rõ Điều, score=0.101): _—_.----- Ngày nhập hỌC: ......................................-.--occ55 o5 co eesoseseeneoeseseenesoesesese Sô hiệu văn bằng: —..................... ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.098): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf (P.4-4, Không rõ Điều, score=0.081): tốt nghiệp đại học, thạc sĩ hoặc tiến sĩ trong nước, nước ngoài mà ngành học là một trong 6 ngoại ngữ được quy định tại Khoản 1, Điều 2 Quy chế này. b...",,
+tn_005,tốt nghiệp,Điểm GPA tích lũy bao nhiêu thì tốt nghiệp loại Xuất sắc?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.18-18, Điều 21, score=0.445): ứng Loại Thang điểm 10 Thang điểm 100 Điểm 4 Điểm chữ Xếp loại Đạt 9,0 đến 10,0 Từ 90 đến 100 4,0 A+ Xuất sắc 8,0 đến cận 9,0 Từ 80 đến cận 90 3,5 A G...","quy_che_dao_tao.pdf (P.20-20, Điều 24, score=0.161): tích lũy (ĐTBCTL) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số t...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.138): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.116): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.111): c quốc phòng-An ninh. - Đạt chuẩn ngoại ngữ xét tốt nghiệp. - Đạt điểm rèn luyện tích lũy tối thiểu là 50 điểm. - Đã hoàn trả sách mượn cho Thư viện. ...",,
+tn_006,tốt nghiệp,Điểm GPA tích lũy bao nhiêu thì tốt nghiệp loại Giỏi?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.18-18, Điều 21, score=0.401): ứng Loại Thang điểm 10 Thang điểm 100 Điểm 4 Điểm chữ Xếp loại Đạt 9,0 đến 10,0 Từ 90 đến 100 4,0 A+ Xuất sắc 8,0 đến cận 9,0 Từ 80 đến cận 90 3,5 A G...","quy_che_dao_tao.pdf (P.20-20, Điều 24, score=0.096): tích lũy (ĐTBCTL) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số t...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.067): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.058): c quốc phòng-An ninh. - Đạt chuẩn ngoại ngữ xét tốt nghiệp. - Đạt điểm rèn luyện tích lũy tối thiểu là 50 điểm. - Đã hoàn trả sách mượn cho Thư viện. ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.012): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...",,
+tn_007,tốt nghiệp,"Những trường hợp nào sinh viên tốt nghiệp loại Giỏi, Xuất sắc bị hạ xuống một bậc?","quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.994): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.018): đợt thi. b) CBCT để cho SV tự do trao đổi khi làm bài, sử dụng tài liệu bị cấm sử dụng hoặc sử dụng các phương tiện thông tin liên lạc tại phòng thi. ...","quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.014): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...","quy_che_dao_tao.pdf (P.9-10, Điều 8, score=0.009): ừng học kỳ của khóa đào tạo. Đây là trình tự mà Trường khuyến cáo sinh viên nên tuân thủ để thuận lợi nhất cho việc tiếp thu kiến thức.  Trang 10/27  ...","quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.008): và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  Trang 26/27  3...",,
+tn_009,tốt nghiệp,Bị kỷ luật từ mức nào trong thời gian học thì bị hạ bậc xếp loại tốt nghiệp?,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.935): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.256): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.041): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.021): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-20, Điều 22, score=0.006): đợt thi. b) CBCT để cho SV tự do trao đổi khi làm bài, sử dụng tài liệu bị cấm sử dụng hoặc sử dụng các phương tiện thông tin liên lạc tại phòng thi. ...",,
+tn_015,tốt nghiệp,Văn bằng tốt nghiệp đại học được cấp mấy bản chính thức cho mỗi sinh viên?,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 2, Trang 3)","[1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf P.3]:
+ĐẠI HỌC QUÓC GIA CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM THÀNH PHÓ HÒ CHÍ MINH Độc lập - Tự do - Hạnh phúc QUY CHÉ Văn bằng, chứng chỉ (Kèm theo Quyết định số A33) /QĐ-ĐHQG, ngày 40 tháng 10 năm 2022 của Giám đốc Đại học Quốc gia Thành phố Hô Chí Minh) Chương l QUY ĐỊNH CHUNG Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng 1. Quy chế này quy định về quản lý văn bằng, chứng chỉ của Đại học Quốc gia Thàn...",False,False,"quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.356): và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  Trang 26/27  3...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.121): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.10-11, Không rõ Điều, score=0.119): ải lập biên bản. thông báo ngay với cơ quan công an địa phương nơi cơ quan đóng trụ sở chính, báo cáo cơ quan quản lý trực tiếp và báo cáo ĐHQG-HCM.  ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.18-18, Không rõ Điều, score=0.037): ừ số gốc; phải lập số vào sổ cấp bản sao, đảm bảo mỗi số vào số cấp bản sao được ghi duy nhất trên một bản sao văn bằng, chứng chỉ cấp cho người học. ...","1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf (P.5-5, Điều 9, score=0.027): nh thứ hai. 4. Sinh viên không được tham gia chính sách học bổng (các loại) và miễn giảm học phí đối với chương trình đào tạo ngành thứ hai. Điều 10. ...",,
+tn_021,tốt nghiệp,Sinh viên chưa tích lũy đủ chứng chỉ giáo dục quốc phòng an ninh có được cấp bằng tốt nghiệp đại học không?,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","[quy_che_dao_tao.pdf P.22]:
+Trang 22/27
+
+6. Khi sinh viên được chuyển từ chương trình chính quy của Trường sang chương trình đào
+tạo từ xa của Trường thì được công nhận chuyển đổi tối đa số tín chỉ theo nguyên tắc tại
+Khoản 3 của điều này.
+Điều 27. Cấp bảng điểm
+1. Trong quá trình học tập, sinh viên có thể đề nghị Trường cấp bảng điểm. Sinh viên thực
+hiện theo hướng dẫn của P.ĐTĐH.
+2. Sau khi tốt nghiệp, sinh viên được cấp m...",False,False,"quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.973): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.11-11, Điều 10, score=0.405): - Sinh viên dự thính đóng học phí theo mức riêng, không được hưởng chính sách dành cho sinh viên chính quy và không được cấp bằng tốt nghiệp đại học. ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.375): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.3-4, Không rõ Điều, score=0.241): bạch trong cấp phát văn bằng. chứng chỉ. Điều 3. Các loại văn bằng, chứng chỉ của ĐHQG-HCM I. Văn bằng bao gồm: a) Bằng tốt nghiệp cao đăng sư phạm.  ...","quy_che_dao_tao.pdf (P.25-26, Điều 33, score=0.092): và đề nghị của Hội đồng xét tốt nghiệp, Hiệu trưởng ký quyết định công nhận tốt nghiệp cho những sinh viên đủ điều kiện theo quy định.  Trang 26/27  3...",,
+ck_001,câu khó,em bị cảnh báo học vụ 2 lần liên tiếp rồi thì kỳ này em có bị đuổi học luôn không bot,"quy_che_dao_tao.pdf (Điều Điều 19, Trang 17)","[quy_che_dao_tao.pdf P.17]:
+Trang 17/27
+
+6. Sinh viên trình độ đại học đang học tại các CSĐT khác muốn đăng ký học thêm một
+chương trình đào tạo thứ hai tại Trường ĐHCNTT thực hiện theo quy định riêng.
+Điều 19. Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường
+1. Chuyển ngành/chương trình
+Sinh viên được xem xét chuyển ngành/chương trình nếu có đủ các điều kiện sau:
+- Sinh viên đạt điều kiện trúng tuyển của ngành/...",False,False,"quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.874): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.837): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.413): p sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.  ...","quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.210): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.21-21, Điều 23, score=0.028): vẫn tiếp tục vi phạm; + Trao đổi bài làm hoặc giấy nháp cho bạn; + Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như n...",,
+ck_002,câu khó,vừa học lại môn F vừa học cải thiện môn C thì điểm tích lũy GPA toàn khóa tính toán như thế nào,"quy_che_dao_tao.pdf (Điều Điều 10, Trang 9)","[quy_che_dao_tao.pdf P.9]:
+Trang 9/27
+
+c) Được thiết kế tích hợp thông qua phương pháp tiếp cận hệ thống đối với việc giảng
+dạy kỹ năng, phẩm chất cá nhân, nghề nghiệp kết hợp với kiến thức nền tảng và kiến thức
+chuyên môn.
+d) Xây dựng kế hoạch và thực hiện các điều kiện đảm bảo chất lượng giáo dục đối với
+chương trình đào tạo đang triển khai.
+đ) Định kỳ sau một khóa đào tạo, thực hiện rà soát chỉnh sửa, bổ sung chương trìn...",False,False,"quy_che_dao_tao.pdf (P.14-14, Điều 15, score=0.036): hí học kỳ, học lần thứ hai trở đi được coi là học lại/cải thiện. - Thời điểm thi kết thúc môn học thuộc học kỳ nào thì Trường tính điểm cho sinh viên ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.034): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","quy_che_dao_tao.pdf (P.13-14, Điều 14, score=0.025): định tại Khoản 1 Điều 14 của Quy chế này. 4. Việc đăng ký học phần cải thiện được thực hiện theo quy trình đăng ký học phần của Trường.  Trang 14/27  ...","quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.016): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","qd2062_221025_quy_dinh_khoi_hp_cong_nhanchuyen_doi_tin_chi.signed.pdf (P.3-4, Điều 3, score=0.011): thể công nhận, chuyển đổi tín chỉ một phần, hoàn toàn hoặc có điều kiện dựa trên kết quả học tập của các vi học phần đã được người học tích lũy.  2  Đ...",,
+ck_004,câu khó,bị điểm F môn thể dục và giáo dục quốc phòng thì có bị tính vào điểm trung bình tích lũy học kỳ để xét học bổng hay cảnh báo học vụ không,"quy_che_dao_tao.pdf (Điều Điều 21, Trang 18)","[quy_che_dao_tao.pdf P.18]:
+Trang 18/27
+
+CHƯƠNG 3. KIỂM TRA VÀ THI HỌC PHẦN
+Điều 20. Tổ chức đánh giá môn học
+1.
+Điều kiện dự thi kết thúc học phần
+Sinh viên được dự thi kết thúc học phần khi có mặt từ 80% trở lên số buổi học theo
+thời khóa biểu của học phần đó, trừ những sinh viên được Hiệu trưởng cho phép học
+chương trình song ngành.
+Giảng viên có thể để nghị P.ĐTĐH không cho sinh viên dự thi kết thúc học phần theo
+quy địn...",False,False,"quy_che_dao_tao.pdf (P.5-5, Điều 3, score=0.393): g: là học phần có nội dung kiến thức và thời lượng tương đương với một học phần khác. - Học phần mới: là học phần sinh viên đăng ký học lần đầu tiên. ...","quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.315): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...","quy_che_dao_tao.pdf (P.20-21, Điều 24, score=0.307): TBHK, ĐTBC, ĐTBCTL được quy định tại Điều 26 của Quy chế này. 5. Kết quả học tập của học kỳ hè (nếu có) được tính chung vào học kỳ liền kề trước đó.  ...","quy_che_dao_tao.pdf (P.20-20, Điều 24, score=0.218): i đăng ký học và dự thi học phần đó. Điều 24. Cách quản lý điểm 1. Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.124): p sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.  ...",,
+ck_007,câu khó,điểm GPA của em là 3.65 nhưng bị học lại 6 tín chỉ và bị khiển trách 1 lần thì tốt nghiệp được loại xuất sắc hay bị hạ bằng giỏi,"quy_che_dao_tao.pdf (Điều Điều 28, Trang 23)","[quy_che_dao_tao.pdf P.23]:
+Trang 23/27
+
+CHƯƠNG 4. ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG
+TỔ CHỨC - QUẢN LÝ ĐÀO TẠO
+Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo
+1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang
+thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng
+Internet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học,
+n...",False,False,"quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.625): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.21-21, Điều 23, score=0.049): vẫn tiếp tục vi phạm; + Trao đổi bài làm hoặc giấy nháp cho bạn; + Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như n...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.20-21, Điều 23, score=0.045): giao cho cán bộ trực thi cùng với túi bài thi kèm các tang vật.Việc xử lý vi phạm SV phải được công bố cho SV biết. Nếu SV không chịu ký tên vào  21  ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.025): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.017): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...",,
+ck_010,câu khó,bằng tốt nghiệp của trường mình ghi xếp loại bằng tiếng Việt hay cả tiếng Anh và có ghi hệ chính quy không,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 9, Trang 5)","[1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf P.5]:
+3 2. Người được cấp văn bằng, chứng chỉ có các nghĩa vụ sau đây: a) Cung cấp chính xác, đầy đủ các thông tin cần thiết để cơ quan có thâm quyền cấp văn bằng, chứng chỉ ghi nội dung trên văn bằng, chứng chỉ. b) Kiểm tra tính chính xác các thông tin ghi trên văn bằng, chứng chỉ trước khi ký nhận văn bằng, chứng chỉ. c) Phải có giấy ủy quyền theo quy định của pháp luật khi không trực tiếp đến nhận vă...",False,False,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.7-8, Không rõ Điều, score=0.575): ngoài, thì tiếng nước ngoài phải được ghi chính xác và phù hợp với nội dung tiếng Việt, kích cỡ chữ nước ngoài không lớn hơn kích cỡ chữ tiếng Việt.  ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.7-7, Không rõ Điều, score=0.566): ốt nghiệp (đối với văn bằng đại học)/xếp loại tốt nghiệp (đối với văn bằng cao đẳng sư phạm). 7. Số hiệu và số vào số gốc cấp văn bằng, chứng chỉ. §. ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.12-12, Không rõ Điều, score=0.553): ằng, chứng chỉ ghi đầy đủ những nội dung tiếng Việt của bản chính văn bằng, chứng chỉ mà cơ quan đó đã cấp. Trường hợp văn bằng. chứng chỉ được chỉnh...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.7-7, Không rõ Điều, score=0.355): hợp với quyền tự chủ về in phôi chứng chỉ. Điều 11. Ngôn ngữ ghi trên văn bằng, chứng chỉ Ngôn ngữ chính ghi trên văn bằng, chứng chỉ là tiếng Việt. Đ...","1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (P.12-12, Không rõ Điều, score=0.278): hính văn bằng, chứng chỉ. Sổ gốc cấp văn bằng, chứng chỉ ghi đầy đủ những nội dung tiếng Việt của bản chính văn bằng, chứng chỉ mà cơ quan đó đã cấp. ...",,
+ck_013,câu khó,rớt môn giáo dục thể chất có bị cảnh báo học vụ và có được xét tốt nghiệp đúng hạn không,"quy_che_dao_tao.pdf (Điều Điều 27, Trang 22)","[quy_che_dao_tao.pdf P.22]:
+Trang 22/27
+
+6. Khi sinh viên được chuyển từ chương trình chính quy của Trường sang chương trình đào
+tạo từ xa của Trường thì được công nhận chuyển đổi tối đa số tín chỉ theo nguyên tắc tại
+Khoản 3 của điều này.
+Điều 27. Cấp bảng điểm
+1. Trong quá trình học tập, sinh viên có thể đề nghị Trường cấp bảng điểm. Sinh viên thực
+hiện theo hướng dẫn của P.ĐTĐH.
+2. Sau khi tốt nghiệp, sinh viên được cấp m...",False,False,"quy_che_dao_tao.pdf (P.14-14, Điều 16, score=0.437): Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ra quyết định bổ nhiệm. Nhiệm vụ cụ thể của Cố vấn học tập có quy định riêng. Đ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.101): p sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.  ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.069): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","quy_che_dao_tao.pdf (P.25-25, Điều 33, score=0.062): công bố chậm nhất trong vòng 01 tuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp. Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.032): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...",,
+ck_014,câu khó,sinh viên bị kỷ luật đình chỉ thi 1 môn thì môn đó bị điểm mấy và có bị đình chỉ các môn thi tiếp theo không,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 17, Trang 11)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.11]:
+11
+
+2. Sơ đồ tóm tắt
+
+3. Nội dung quy trình
+Bước
+Quy trình
+Mô tả chi tiết công việc
+Thời
+hạn
+hoàn
+thành
+(ngày)
+Đơn vị
+thực hiện
+Đơn vị
+phối
+hợp
+Biểu
+mẫu
+1
+Xuất lịch
+thi
+Căn cứ vào kế hoạch thi,
+cùng thời điểm xuất danh
+sách môn thi Lý thuyết dự
+kiến, hệ thống xuất lịch thi
+Đồ án, Vấn đáp dựa trên
+thông tin môn học . Lịch thi
+dự kiến theo lịch thi mẫu,
+bao gồm tất cả các môn thi
+có hình thức cuối k...",False,False,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.21-21, Điều 23, score=0.883): vẫn tiếp tục vi phạm; + Trao đổi bài làm hoặc giấy nháp cho bạn; + Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như n...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.472): p sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.  ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.446): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","quy_che_dao_tao.pdf (P.19-19, Điều 22, score=0.420): viên tự ý bỏ thi sẽ nhận điểm không (0) cho học phần đó. 3. Nếu được nhận điểm I, trong thời gian tối đa là 2 học kỳ chính tiếp theo, sinh viên phải l...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.231): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...",,
+ck_017,câu khó,hết thời gian đào tạo tối đa 6 năm mà chưa trả hết nợ môn thì trường xử lý thế nào,"quy_che_dao_tao.pdf (Điều Điều 19, Trang 17)","[quy_che_dao_tao.pdf P.17]:
+Trang 17/27
+
+6. Sinh viên trình độ đại học đang học tại các CSĐT khác muốn đăng ký học thêm một
+chương trình đào tạo thứ hai tại Trường ĐHCNTT thực hiện theo quy định riêng.
+Điều 19. Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường
+1. Chuyển ngành/chương trình
+Sinh viên được xem xét chuyển ngành/chương trình nếu có đủ các điều kiện sau:
+- Sinh viên đạt điều kiện trúng tuyển của ngành/...",False,False,"quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.451): ược cho thôi học theo mục b khoản này. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16. - Bị đình chỉ học tập lần thứ hai. ...","quy_che_dao_tao.pdf (P.15-15, Điều 16, score=0.399): từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp. b. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học ...","quy_che_dao_tao.pdf (P.14-15, Điều 16, score=0.289): hạn. 2. Đình chỉ học tập - Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ hoặc nhờ người thi hộ.  Trang 15/27  ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.208): đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được ...","quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.148): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...",,
+ck_018,câu khó,nếu điểm phúc khảo lệch so với điểm ban đầu thì khi nào được sửa điểm chính thức vào hệ thống,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (Điều Điều 15, Trang 10)","[1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf P.10]:
+10
+
+Điều 14. Quy trình tổ chức thi (đối với hình thức tự luận, trắc nghiệm)
+1. Đầu vào, đầu ra, thời gian:
+Đầu vào: Lịch thi, danh sách CBCT, túi đề thi, sổ theo dõi bàn giao đề thi và bài thi.
+Đầu ra: Túi bài thi, sổ theo dõi bàn giao đề thi và bài thi có thông tin bàn giao, danh sách
+CBCT cập nhật (khi có sự thay đổi).
+Thời gian: Quy trình diễn ra trong ngày thi.
+2. Sơ đồ tóm tắt
+
+Điều 15. Quy t...",False,False,"1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-16, Điều 19, score=0.185): ên bài thi với điểm được nhập vào hệ thống. t+60 P.ĐTĐH/ VPĐB  7 Lưu trữ – Lưu trữ bản chính bảng điểm thi và các hồ sơ liên quan. t+60 P.ĐTĐH/ VPĐB  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.17-18, Điều 20, score=0.150): trên hệ thống và gửi cho đơn vị tổ chức thi. t+7 P.ĐTĐH / VPĐB Khoa – Danh sách phúc khảo điểm  K H O A 1. Thông báo cho sinh viên đăng ký phúc khảo  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-17, Điều 20, score=0.060): . Điều 20. Quy trình phúc khảo 1. Đầu vào, đầu ra, thời gian: Đầu vào: Danh sách chấm phúc khảo Đầu ra: Danh sách chấm phúc khảo (có điểm phúc khảo)  ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.13-13, Điều 16, score=0.048): thành phần điểm nào chịu trách nhiệm nhập điểm cho thành phần điểm đó vào Hệ thống quản lý điểm trong thời gian chậm nhất 20 ngày tính từ mốc 01 ngày ...","1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf (P.16-16, Điều 20, score=0.021): ng thời hạn nhận đơn phúc khảo. 6. Khoa chuyển bài thi và hồ sơ thi về P.ĐTĐH để lưu trữ. Điều 20. Quy trình phúc khảo 1. Đầu vào, đầu ra, thời gian: ...",,
+ck_019,câu khó,chứng chỉ tin học MOS hay IC3 có được công nhận chuẩn đầu ra tin học ở trường không,"1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf (Điều Điều 2, Trang 4)","[1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf P.4]:
+t2 b) Bằng cử nhân. c) Bằng thạc sĩ. d) Băng tiến sĩ. đ) Văn bằng trình độ tương đương bao gồm: bằng kỹ sư, bằng kiến trúc sư, bằng bác sĩ y khoa, bằng bác sĩ nha khoa. bằng dược sĩ. bằng bác sĩ y học cổ truyền. 2. Chứng chỉ bao gồm: a) Chứng chỉ thực hành: chứng chỉ ứng dụng công nghệ thông tin cơ bản, chứng chỉ ứng dụng công nghệ thông tin nâng cao, chứng chỉ đào tạo kiểm định viên kiểm định chấ...",False,False,"quy_che_dao_tao.pdf (P.21-21, Điều 26, score=0.120): ung tương đương với nội dung môn học trong chương trình đào tạo; b) Căn cứ chương trình môn học và kết quả trên bảng điểm học tập của sinh viên, Hiệu ...","quy_che_dao_tao.pdf (P.23-23, Điều 30, score=0.028): ng thông tin điện tử để công bố công khai chuẩn đầu ra, nội dung chương trình đào tạo, điều kiện đảm bảo chất lượng đào tạo tương ứng với quy mô theo ...","170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf (P.3-4, Không rõ Điều, score=0.021): năm 2014 của Bộ trưởng Bộ GD&ĐT để làm cơ sở tham chiếu trong việc tổ chức giảng dạy, đánh giá và công nhận chuẩn trình độ ngoại ngữ của người học.  C...","qd1537_241029_quy_dinh_dao_tao_va_cong_nhan_tin_chi_khoa_hoc_mooc.signed.pdf (P.12-12, Điều 11, score=0.007): iểm tra cuối kỳ và được quy định chi tiết trong đề cương môn học. 6. Người học có thể tham gia kiểm tra kết thúc môn học nhiều lần để cải thiện điểm. ...","quy_che_dao_tao.pdf (P.21-23, Điều 26, score=0.006): ào tạo chính quy của các cơ sở đào tạo ngoài trường được công nhận và chuyển đổi không vượt quá 50% tổng số tín chỉ chương trình đào tạo của trường.  ...",,
+ck_020,câu khó,sinh viên chuyển trường từ Đại học Bách Khoa sang UIT thì các môn đã học bên Bách Khoa có được bảo lưu chuyển điểm không,"quy_che_dao_tao.pdf (Điều Điều 16, Trang 14)","[quy_che_dao_tao.pdf P.14]:
+Trang 14/27
+
+5. Đăng ký học các môn ngoại ngữ:
+- Các lớp học ngoại ngữ nằm trong chương trình đào tạo cho sinh viên chính quy được
+mở với thời khóa biểu riêng, linh động theo nhu cầu của sinh viên. Sinh viên được tự
+do đăng ký học các lớp ngoại ngữ theo điều kiện môn tiên quyết và không trùng giờ
+học với các môn học chính khóa mà sinh viên đang học trên hệ thống của Trường.
+- Trong học kỳ hè sinh ...",False,False,"quy_che_dao_tao.pdf (P.26-26, Điều 34, score=0.264): hiệp được xác định dựa trên ĐTBCTL theo bảng xếp loại quy định tại Khoản 1, Điều 21 của Quy chế này. Riêng đối với những sinh viên có kết quả học tập ...","quy_che_dao_tao.pdf (P.19-20, Điều 23, score=0.160): cầu một học phần thuộc trình độ đại học ở một CSĐT khác trong thời gian không quá 5 năm nếu muốn xin miễn học phần đó thì cần phải làm  Trang 20/27  đ...","quy_che_dao_tao.pdf (P.21-23, Điều 26, score=0.076): ào tạo chính quy của các cơ sở đào tạo ngoài trường được công nhận và chuyển đổi không vượt quá 50% tổng số tín chỉ chương trình đào tạo của trường.  ...","quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.075): đủ thời gian học tập theo quy định tại Điều 6 của Quy chế này; - Sinh viên đạt điều kiện trúng tuyển của chương trình, ngành đào tạo cùng khóa tuyển s...","quy_che_dao_tao.pdf (P.17-17, Điều 19, score=0.049): oa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đến) và Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo (nơi chuyển đi). ...",,

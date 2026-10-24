@@ -1,0 +1,95 @@
+{
+  "hybrid_top50": {
+    "page_recall_at_3": 0.5048,
+    "page_recall_at_5": 0.5905,
+    "page_recall_at_20": 0.8,
+    "page_recall_at_50": 0.8952,
+    "page_mrr_at_5": 0.4333,
+    "page_ci_95": {
+      "recall_at_3": [
+        0.4095,
+        0.6095
+      ],
+      "recall_at_5": [
+        0.4952,
+        0.6857
+      ],
+      "mrr_at_5": [
+        0.3451,
+        0.5163
+      ],
+      "recall_at_20": [
+        0.7143,
+        0.8762
+      ],
+      "recall_at_50": [
+        0.8381,
+        0.9524
+      ]
+    },
+    "article_recall_at_3": 0.2381,
+    "article_recall_at_5": 0.3048,
+    "article_recall_at_20": 0.4286,
+    "article_recall_at_50": 0.5048,
+    "article_mrr_at_5": 0.1952,
+    "article_ci_95": {
+      "recall_at_3": [
+        0.1619,
+        0.3238
+      ],
+      "recall_at_5": [
+        0.219,
+        0.4
+      ],
+      "mrr_at_5": [
+        0.1335,
+        0.2681
+      ],
+      "recall_at_20": [
+        0.3333,
+        0.5238
+      ],
+      "recall_at_50": [
+        0.4,
+        0.5905
+      ]
+    }
+  },
+  "hybrid_rerank_top5": {
+    "page_recall_at_3": 0.5238,
+    "page_recall_at_5": 0.6,
+    "page_mrr_at_5": 0.4657,
+    "page_ci_95": {
+      "recall_at_3": [
+        0.4286,
+        0.6286
+      ],
+      "recall_at_5": [
+        0.5048,
+        0.6952
+      ],
+      "mrr_at_5": [
+        0.3768,
+        0.5548
+      ]
+    },
+    "article_recall_at_3": 0.2667,
+    "article_recall_at_5": 0.2952,
+    "article_mrr_at_5": 0.2146,
+    "article_ci_95": {
+      "recall_at_3": [
+        0.181,
+        0.3524
+      ],
+      "recall_at_5": [
+        0.2095,
+        0.3905
+      ],
+      "mrr_at_5": [
+        0.1476,
+        0.29
+      ]
+    }
+  },
+  "total_failures_page_r5": 42
+}

@@ -1,0 +1,425 @@
+{
+  "summary_by_chunk_set": {
+    "fixed_400_50": {
+      "total_chunks": 1012,
+      "chunks_with_article": 658,
+      "article_coverage_pct": 65.02
+    },
+    "fixed_800_150": {
+      "total_chunks": 556,
+      "chunks_with_article": 360,
+      "article_coverage_pct": 64.75
+    },
+    "fixed_1200_200": {
+      "total_chunks": 413,
+      "chunks_with_article": 265,
+      "article_coverage_pct": 64.16
+    },
+    "sentence_800_1": {
+      "total_chunks": 486,
+      "chunks_with_article": 323,
+      "article_coverage_pct": 66.46
+    },
+    "structured_800": {
+      "total_chunks": 928,
+      "chunks_with_article": 703,
+      "article_coverage_pct": 75.75
+    }
+  },
+  "by_file_and_set": {
+    "1139_qd-dhcntt_20-12-2022_to_chuc_thi_cac_mon_hoc_he_dai_hoc_chinh_quy.pdf": {
+      "fixed_400_50": {
+        "is_ocr": false,
+        "total": 130,
+        "with_article": 126,
+        "coverage_pct": 96.92
+      },
+      "fixed_800_150": {
+        "is_ocr": false,
+        "total": 72,
+        "with_article": 69,
+        "coverage_pct": 95.83
+      },
+      "fixed_1200_200": {
+        "is_ocr": false,
+        "total": 50,
+        "with_article": 48,
+        "coverage_pct": 96.0
+      },
+      "sentence_800_1": {
+        "is_ocr": false,
+        "total": 66,
+        "with_article": 63,
+        "coverage_pct": 95.45
+      },
+      "structured_800": {
+        "is_ocr": false,
+        "total": 169,
+        "with_article": 159,
+        "coverage_pct": 94.08
+      }
+    },
+    "1195-qd-dhqg_27-9-2019_quy_dinh_dao_tao_song_nganh_dhqg.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 70,
+        "with_article": 39,
+        "coverage_pct": 55.71
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 36,
+        "with_article": 19,
+        "coverage_pct": 52.78
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 27,
+        "with_article": 14,
+        "coverage_pct": 51.85
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 32,
+        "with_article": 18,
+        "coverage_pct": 56.25
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 36,
+        "with_article": 19,
+        "coverage_pct": 52.78
+      }
+    },
+    "1372-qd-dhqg_10-10-2022_quy_che_van_bang_chung_chi.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 179,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 95,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 70,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 74,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 95,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      }
+    },
+    "159-qd-dhcntt_05-03-2024_ban_hanh_quy_dinh_kltn.pdf": {
+      "fixed_400_50": {
+        "is_ocr": false,
+        "total": 59,
+        "with_article": 57,
+        "coverage_pct": 96.61
+      },
+      "fixed_800_150": {
+        "is_ocr": false,
+        "total": 36,
+        "with_article": 34,
+        "coverage_pct": 94.44
+      },
+      "fixed_1200_200": {
+        "is_ocr": false,
+        "total": 22,
+        "with_article": 22,
+        "coverage_pct": 100.0
+      },
+      "sentence_800_1": {
+        "is_ocr": false,
+        "total": 27,
+        "with_article": 26,
+        "coverage_pct": 96.3
+      },
+      "structured_800": {
+        "is_ocr": false,
+        "total": 67,
+        "with_article": 63,
+        "coverage_pct": 94.03
+      }
+    },
+    "170_qd_dhqg_27_02_2018_cong_nhan_chung_chi_ngoai_ngu.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 28,
+        "with_article": 7,
+        "coverage_pct": 25.0
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 17,
+        "with_article": 5,
+        "coverage_pct": 29.41
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 13,
+        "with_article": 4,
+        "coverage_pct": 30.77
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 15,
+        "with_article": 3,
+        "coverage_pct": 20.0
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 17,
+        "with_article": 5,
+        "coverage_pct": 29.41
+      }
+    },
+    "650-qd-dhqg_3-6-2019-quy_dinh_dao_tao_lien_thong_tu_trinh_do_dai_hoc_len_trinh_do_thac_si.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 52,
+        "with_article": 46,
+        "coverage_pct": 88.46
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 28,
+        "with_article": 24,
+        "coverage_pct": 85.71
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 22,
+        "with_article": 18,
+        "coverage_pct": 81.82
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 26,
+        "with_article": 22,
+        "coverage_pct": 84.62
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 28,
+        "with_article": 24,
+        "coverage_pct": 85.71
+      }
+    },
+    "809-qd-dhqg_3-7-2023_quy_dinh_dgkqht_theo_hinh_thuc_tt.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 87,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 48,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 38,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 38,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 48,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      }
+    },
+    "cv671-dhqg_18-4-2022_su_dung_chung_chi_vnu-ept.pdf": {
+      "fixed_400_50": {
+        "is_ocr": true,
+        "total": 5,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_800_150": {
+        "is_ocr": true,
+        "total": 3,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "fixed_1200_200": {
+        "is_ocr": true,
+        "total": 2,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "sentence_800_1": {
+        "is_ocr": true,
+        "total": 4,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      },
+      "structured_800": {
+        "is_ocr": true,
+        "total": 3,
+        "with_article": 0,
+        "coverage_pct": 0.0
+      }
+    },
+    "qd1537_241029_quy_dinh_dao_tao_va_cong_nhan_tin_chi_khoa_hoc_mooc.signed.pdf": {
+      "fixed_400_50": {
+        "is_ocr": false,
+        "total": 118,
+        "with_article": 112,
+        "coverage_pct": 94.92
+      },
+      "fixed_800_150": {
+        "is_ocr": false,
+        "total": 69,
+        "with_article": 65,
+        "coverage_pct": 94.2
+      },
+      "fixed_1200_200": {
+        "is_ocr": false,
+        "total": 52,
+        "with_article": 49,
+        "coverage_pct": 94.23
+      },
+      "sentence_800_1": {
+        "is_ocr": false,
+        "total": 61,
+        "with_article": 57,
+        "coverage_pct": 93.44
+      },
+      "structured_800": {
+        "is_ocr": false,
+        "total": 159,
+        "with_article": 149,
+        "coverage_pct": 93.71
+      }
+    },
+    "qd2062_221025_quy_dinh_khoi_hp_cong_nhanchuyen_doi_tin_chi.signed.pdf": {
+      "fixed_400_50": {
+        "is_ocr": false,
+        "total": 76,
+        "with_article": 70,
+        "coverage_pct": 92.11
+      },
+      "fixed_800_150": {
+        "is_ocr": false,
+        "total": 36,
+        "with_article": 32,
+        "coverage_pct": 88.89
+      },
+      "fixed_1200_200": {
+        "is_ocr": false,
+        "total": 28,
+        "with_article": 25,
+        "coverage_pct": 89.29
+      },
+      "sentence_800_1": {
+        "is_ocr": false,
+        "total": 36,
+        "with_article": 32,
+        "coverage_pct": 88.89
+      },
+      "structured_800": {
+        "is_ocr": false,
+        "total": 80,
+        "with_article": 72,
+        "coverage_pct": 90.0
+      }
+    },
+    "quy_che_dao_tao.pdf": {
+      "fixed_400_50": {
+        "is_ocr": false,
+        "total": 208,
+        "with_article": 201,
+        "coverage_pct": 96.63
+      },
+      "fixed_800_150": {
+        "is_ocr": false,
+        "total": 116,
+        "with_article": 112,
+        "coverage_pct": 96.55
+      },
+      "fixed_1200_200": {
+        "is_ocr": false,
+        "total": 89,
+        "with_article": 85,
+        "coverage_pct": 95.51
+      },
+      "sentence_800_1": {
+        "is_ocr": false,
+        "total": 107,
+        "with_article": 102,
+        "coverage_pct": 95.33
+      },
+      "structured_800": {
+        "is_ocr": false,
+        "total": 226,
+        "with_article": 212,
+        "coverage_pct": 93.81
+      }
+    }
+  },
+  "ocr_vs_clean_by_set": {
+    "fixed_400_50": {
+      "clean_total": 591,
+      "clean_with_article": 566,
+      "clean_coverage_pct": 95.77,
+      "ocr_total": 421,
+      "ocr_with_article": 92,
+      "ocr_coverage_pct": 21.85
+    },
+    "fixed_800_150": {
+      "clean_total": 329,
+      "clean_with_article": 312,
+      "clean_coverage_pct": 94.83,
+      "ocr_total": 227,
+      "ocr_with_article": 48,
+      "ocr_coverage_pct": 21.15
+    },
+    "fixed_1200_200": {
+      "clean_total": 241,
+      "clean_with_article": 229,
+      "clean_coverage_pct": 95.02,
+      "ocr_total": 172,
+      "ocr_with_article": 36,
+      "ocr_coverage_pct": 20.93
+    },
+    "sentence_800_1": {
+      "clean_total": 297,
+      "clean_with_article": 280,
+      "clean_coverage_pct": 94.28,
+      "ocr_total": 189,
+      "ocr_with_article": 43,
+      "ocr_coverage_pct": 22.75
+    },
+    "structured_800": {
+      "clean_total": 701,
+      "clean_with_article": 655,
+      "clean_coverage_pct": 93.44,
+      "ocr_total": 227,
+      "ocr_with_article": 48,
+      "ocr_coverage_pct": 21.15
+    }
+  }
+}
