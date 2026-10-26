@@ -30,8 +30,6 @@ Hệ thống được thiết kế theo kiến trúc 4 tầng phân tách độc
 
 ![Sơ đồ kiến trúc UITBOT](docs/architecture.png)
 
-> *Chi tiết luồng xử lý và các quyết định kỹ thuật: xem tại [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) và [docs/DECISIONS.md](docs/DECISIONS.md).*
-
 ---
 
 ## Kết quả thực nghiệm cốt lõi
@@ -47,7 +45,6 @@ Hiệu năng thực tế được đo lường trên bộ dữ liệu chuẩn **
 | **Evidence Gate F1-score** | **0.968** | Phân định câu hỏi hợp lệ / ngoài luồng với độ chính xác lọc đạt 97.1%. |
 | **Groundedness (LLM Judge)** | **19/20** | Điểm bám sát quy chế được đánh giá trên mẫu kiểm thử qua LLM Judge. |
 
-> *Báo cáo chi tiết về kiểm định thống kê, phân tích độ sâu Top-K và bài học kinh nghiệm xem tại [evaluation/results.md](evaluation/results.md).*
 
 ---
 
