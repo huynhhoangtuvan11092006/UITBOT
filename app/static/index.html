@@ -425,6 +425,8 @@ function renderSources(container, sources) {
 // Render Nút phản hồi 👍 / 👎 gọi /api/v1/feedback
 // ---------------------------------------------------------
 function renderFeedbackBar(container, msgId) {
+  if (!container || container.querySelector('.feedback-bar')) return;
+
   const bar = document.createElement('div');
   bar.className = 'feedback-bar';
 
@@ -503,7 +505,9 @@ function addMessage(role, text, sources, isError = false, msgId = null) {
     if (sources && sources.length) {
       renderSources(b, sources);
     }
-    renderFeedbackBar(contentWrap, msgId);
+    if (msgId) {
+      renderFeedbackBar(contentWrap, msgId);
+    }
   }
 
   m.append(av, contentWrap);

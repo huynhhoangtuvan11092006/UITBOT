@@ -10,7 +10,9 @@
 
 Trợ lý AI tra cứu quy chế, quy định học vụ tại **Trường Đại học Công nghệ Thông tin (ĐHQG-HCM - UIT)** với cơ chế đối soát và trích dẫn minh bạch nguồn văn bản (tên file, Điều khoản, số trang).
 
-![Giao diện UITBOT Demo](docs/demo-ui.png)
+![Giao diện UITBOT Demo 1](docs/demo_ui_1.png)
+![Giao diện UITBOT Demo 2](docs/demo_ui_2.png)
+![Giao diện UITBOT Demo 3](docs/demo_ui_3.png)
 
 ---
 
